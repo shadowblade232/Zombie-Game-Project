@@ -1,0 +1,3 @@
+Game Assets is where models for anything used within the game that is not a part of the scene goes
+Materials is materials
+Prefabs is saved prefabs of game assets
