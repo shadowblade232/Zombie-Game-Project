@@ -6,84 +6,96 @@ using UnityEngine.AI;
 public class ZombieController : MonoBehaviour
 {
     //basic variables
-    private Transform target;
-    private GameObject player;
-    NavMeshAgent agent;
-    private Vector3 targetPosition;
-    private Rigidbody rb;
-    private PlayerUI playerUi;
+    private Transform target; // the target the zombie is currently chasing
+    private GameObject player; // the player object
+    NavMeshAgent agent; // the NavMeshAgent component
+    private Vector3 targetPosition; // the target position for the zombie to move to
+    private Rigidbody rb; // the Rigidbody component
+    private PlayerUI playerUi; // the PlayerUI component
+    private Vector3 spawnPosition; // the initial position of the zombie
+    public float spawnDistance; // the distance from the spawn position to start chasing the player
     //vision variables
-    public int numRays;
-    public float range;
-    public float coneAngle;
+    public int numRays; // the number of rays to cast for vision detection
+    public float range; // the range of the rays for vision detection
+    public float coneAngle; // the angle of the cone of vision
     //random move variables
-    public float minWaitTime = 1.0f;
-    public float maxWaitTime = 5.0f;
-    public float minMoveDistance = 1.0f;
-    public float maxMoveDistance = 10.0f;
+    public float minWaitTime = 1.0f; // the minimum time to wait before moving to a new random position
+    public float maxWaitTime = 5.0f; // the maximum time to wait before moving to a new random position
+    public float minMoveDistance = 1.0f; // the minimum distance to move to a new random position
+    public float maxMoveDistance = 10.0f; // the maximum distance to move to a new random position
     //memory variables
-    public float memoryDuration;
-    public float memoryTimer = 0.0f;
+    public float memoryDuration; // the duration of the memory of the player's position
+    public float memoryTimer = 0.0f; // the timer for the memory
     //zombie variables
-    public float health;
-    public Material damagedMaterial;
-    public float damageTimer;
-    private Material starterMaterial;
-    private float timeSinceAttack = 1;
-    public float targetDistance;
+    public float health; // the health of the zombie
+    public Material damagedMaterial; // the material to use when the zombie is damaged
+    public float damageTimer; // the timer for the damaged material
+    private Material starterMaterial; // the starting material of the zombie
+    private float timeSinceAttack = 1; // the time since the last attack
+    public float targetDistance; // the distance to the target
+    private bool isDead = false; // a flag to indicate if the zombie is dead
+    private float timeDead; // how long the zombie has been dead
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        agent = GetComponent<NavMeshAgent>();
-        starterMaterial = gameObject.GetComponent<MeshRenderer>().material;
-        rb = gameObject.GetComponent<Rigidbody>();
-        target = player.transform;
-        playerUi = GetComponent<PlayerUI>();
+        player = GameObject.FindGameObjectWithTag("Player"); // find the player object by tag
+        agent = GetComponent<NavMeshAgent>(); // get the NavMeshAgent component
+        starterMaterial = gameObject.GetComponent<MeshRenderer>().material; // get the starting material of the zombie
+        rb = gameObject.GetComponent<Rigidbody>(); // get the Rigidbody component
+        target = player.transform; // set the target to the player object
+        playerUi = GetComponent<PlayerUI>(); // get the PlayerUI component
+        spawnPosition = gameObject.transform.position; // set the spawn position to the initial position of the zombie
     }
 
     void Update()
     {
+        // Calculate the distance between the enemy and the target
         targetDistance = Vector3.Distance(gameObject.transform.position, target.position);
+    
+        // If the enemy is too close to the target do not do anything
+        if(!(targetDistance > spawnDistance)){
+            return;
+        }
+        // If the enemy is dead and they are a certain distance from the player come back to life
+        if(isDead && targetDistance > spawnDistance && timeDead < 100){
+            isDead = false;
+            gameObject.transform.position = spawnPosition;
+        }
+        // If the enemy is close enough to attack the player, increase time since the last attack and attack if enough time has passed
         if (Vector3.Distance(gameObject.transform.position, target.position) < 1.5)
         {
             timeSinceAttack += Time.deltaTime;
             if (timeSinceAttack >= 1) {
+                // Get the player controller component and damage the player
                 PlayerController playerController = player.GetComponent<PlayerController>();
                 playerController.takeDamage(5);
                 timeSinceAttack = 0;
             }
         }
+    
+        // If the enemy should chase the player, set the agent's destination to the player's current position
         if (shouldChase())
         {
-            // Set the agent's destination to the player's current position
-            agent.SetDestination(target.position);                       
+            agent.SetDestination(target.position);
         }
-        else
+        else // If the enemy should not chase the player, choose a new random target position within the nav mesh and set the agent's destination to that position
         {
-            // Choose a new random target position within the nav mesh
             targetPosition = RandomNavmeshLocation(minMoveDistance, maxMoveDistance);
-
-            // Set the agent's destination to the target position
             agent.SetDestination(targetPosition);
-        }
-
-        if(raycastDistance() < 5)
-        {
-            rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
-        }
-
+        }    
+        // If the enemy's material is not the original material, gradually change it back to the original material
         if(gameObject.GetComponent<MeshRenderer>().material != starterMaterial)
         {
             changeMaterial(.5f, GetComponent<Renderer>(), starterMaterial);
-        }
-
+        }    
+        // If the enemy's health is zero or below, destroy the enemy
         if(health <= 0)
         {
-            Destroy(gameObject);
+            isDead = true;
         }
     }
-
+    
+    // Calculate the distance from the enemy to the closest object in front of it
     private float raycastDistance() {
         float distance;
         RaycastHit hit;
@@ -98,45 +110,51 @@ public class ZombieController : MonoBehaviour
         }
         return distance;
     }
-
+    
+    // Determine whether the enemy should chase the player based on whether the player is within vision range or in memory
     public bool shouldChase()
     {
         bool shouldChase = false;
-
+    
         // Check if the target is within the vision range and line of sight is clear
         if (inVision(numRays, range, coneAngle))
         {
             shouldChase = true;
         }
+    
         // Check if the target is in memory
         if (inMemory())
         {
             shouldChase = true;
         }
+    
+        // Check if the enemy is close to its target position
         if(Vector3.Distance(gameObject.transform.position, targetPosition) < 5)
         {
             shouldChase = true;
         }
-
+    
         return shouldChase;
     }
-
+    
+    // Damage the enemy and change its material to the damaged material for a short time
     public void takeDamage(float amount)
     {
         health -= amount;
-
+    
         // Get the renderer component
         Renderer renderer = GetComponent<Renderer>();
-
+    
         // Store the current material
         Material originalMaterial = renderer.material;
-
+    
         // Change the material to the new material
         renderer.material = damagedMaterial;
-
+    
         damageTimer = 0;
     }
 
+    // When the zombie takes damage it changes to another material to indicate damage
     private void changeMaterial(float seconds, Renderer renderer, Material originalMaterial)
     {
         damageTimer += Time.deltaTime;
@@ -148,6 +166,7 @@ public class ZombieController : MonoBehaviour
         }
     }
 
+    // Check if the enemy can see the player
     private bool inVision(int numRays, float range, float coneAngle)
     {
         bool inVision = false;
@@ -183,6 +202,7 @@ public class ZombieController : MonoBehaviour
         return inVision;
     }
 
+    // Comes up with a random location within a radius
     private Vector3 RandomNavmeshLocation(float minDistance, float maxDistance)
     {
         Vector3 randomDirection = Random.insideUnitSphere * maxDistance;
@@ -195,7 +215,8 @@ public class ZombieController : MonoBehaviour
         }
         return finalPosition;
     }
-
+    
+    // Check if the player is within the memory and if they are within vision reset memory
     private bool inMemory()
     {
         bool memory = false;
