@@ -220,7 +220,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _RoughnessStrength: 0
+    - _RoughnessStrength: 0.72
     - _Saturation: 1
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
@@ -263,7 +263,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _AlbedoColor: {r: 0, g: 0, b: 0, a: 0}
+    - _AlbedoColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

@@ -205,7 +205,7 @@ Material:
     - _NormalScale: 1
     - _OpaqueCullMode: 2
     - _POMAmplitude: 4
-    - _POMSteps: 100
+    - _POMSteps: 50
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
