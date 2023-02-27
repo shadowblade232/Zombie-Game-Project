@@ -210,7 +210,7 @@ Material:
     - _NormalScale: 1
     - _OpaqueCullMode: 2
     - _POMAmplitude: 30
-    - _POMSteps: 5
+    - _POMSteps: 20
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -222,7 +222,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _RoughnessStrength: 3
+    - _RoughnessStrength: 2.5
     - _Saturation: 0.5
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1

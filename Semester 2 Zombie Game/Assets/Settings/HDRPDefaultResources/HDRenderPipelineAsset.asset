@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: HDRenderPipelineAsset
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
-    supportShadowMask: 1
+    supportShadowMask: 0
     supportSSR: 1
-    supportSSRTransparent: 0
+    supportSSRTransparent: 1
     supportSSAO: 1
     supportSSGI: 1
     supportSubsurfaceScattering: 1
@@ -51,8 +51,8 @@ MonoBehaviour:
     probeVolumeMemoryBudget: 1024
     supportProbeVolumeStreaming: 0
     probeVolumeSHBands: 1
-    supportRayTracing: 0
-    supportedRayTracingMode: 3
+    supportRayTracing: 1
+    supportedRayTracingMode: 1
     lightLoopSettings:
       cookieAtlasSize: 2048
       cookieFormat: 74
@@ -107,7 +107,7 @@ MonoBehaviour:
       maxDirectionalShadowMapResolution: 2048
       maxPunctualShadowMapResolution: 2048
       maxAreaShadowMapResolution: 2048
-      supportScreenSpaceShadows: 1
+      supportScreenSpaceShadows: 0
       maxScreenSpaceShadowSlots: 4
       screenSpaceShadowBufferFormat: 48
     decalSettings:
