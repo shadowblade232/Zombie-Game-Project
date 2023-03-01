@@ -1,44 +1,56 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
+using System;
 
-public class InventoryUI : MonoBehaviour
-{
-    public int height;
-    public int width;
-    public GameObject uiImagePrefab; // the prefab for the UI image you want to create
-    private float imageSize; // the actual size of each image
-    public float imageSizeSetting; // the outward facing image sizer
-    public float spacing; // the spacing between each image
-    private bool inventoryShown;
-    public float resolution;
+public class InventoryUI : MonoBehaviour {
 
-    void Start()
-    {
-        Debug.Log(Screen.currentResolution);
+    public GameObject image; // The image to use
+    public int numImages = 16; // The number of images to place on the canvas
+    public float margin = 5; // The margin between images
+    public int canvasWidth = 800; // The width of the canvas
+    public int canvasHeight = 800; // The height of the canvas
+    public float imageScale; // Scale of the Image
+    public bool inventoryShown;
+    float imageWidth ;
+    float imageHeight;
+
+    private List<Sprite> sprites = new List<Sprite>(); // The list of sprites to use
+    private int numCols, numRows; // The number of columns and rows of images to use
+
+    // Use this for initialization
+    void Start () {
+        // Calculate the number of rows and columns
+        numCols = (int)Math.Ceiling(Math.Sqrt(numImages));
+        numRows = (int)Math.Ceiling((float)numImages / numCols);
+
+        // Calculate the size of each image
+        imageWidth = (canvasWidth - ((numCols + 1) * margin)) / numCols;
+        imageHeight = (canvasHeight - ((numRows + 1) * margin)) / numRows;
+
+        
+
+        
     }
 
-    void Update()
-    {
+    void Update(){
         if (Input.GetKeyDown("e"))
         {
             if (inventoryShown == false)
             {
                 inventoryShown = true;
                 Debug.Log("generate inventory");
-                for (int i = 0; i < height; i++)
-                {
-                    for (int j = 0; j < width; j++)
-                    {
-                        // calculate the position of the new image based on its row and column
-                        float x = j * (imageSize + spacing) - ((width - 1) * (imageSize + spacing) / 2f);
-                        float y = i * (imageSize + spacing) - ((height - 1) * (imageSize + spacing) / 2f);
+                // Place the sprites on the canvas
+                for (int i = 0; i < numImages; i++) {
+                    // Calculate position of image
+                    int row = i / numCols;
+                    int col = i % numCols;
+                    float x = margin + col * (imageWidth + margin);
+                    float y = margin + row * (imageHeight + margin);
 
-                        // instantiate a new UI image prefab and position it
-                        GameObject newImage = Instantiate(uiImagePrefab, transform);
-                        newImage.transform.localPosition = new Vector3(x, y, 0);
-                        newImage.transform.localScale = Vector3.one * imageSize;
-                    }
+                    // Create a new GameObject and add a SpriteRenderer component
+                    GameObject obj = Instantiate(image, transform);
+                    obj.transform.localPosition = new Vector3(x, y, 0f);
+                    obj.transform.localScale = Vector3.one * imageScale;
                 }
             }
             else

@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -645,12 +645,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb88aec1b10c12d4f8e5885db8f12480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 4
-  width: 5
-  uiImagePrefab: {fileID: 8587643827602551459, guid: 403cb0bc503508d41a5291454eb5c698,
-    type: 3}
-  imageSize: 1.5
-  spacing: 90
+  image: {fileID: 8587643827602551459, guid: 403cb0bc503508d41a5291454eb5c698, type: 3}
+  numImages: 16
+  margin: 0.1
+  canvasWidth: 250
+  canvasHeight: 250
+  imageScale: 0.75
+  inventoryShown: 0
 --- !u!1 &1815743087
 GameObject:
   m_ObjectHideFlags: 0
