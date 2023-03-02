@@ -13,9 +13,12 @@ public class InventoryUI : MonoBehaviour {
     public bool inventoryShown;
     float imageWidth ;
     float imageHeight;
+    public GameObject testObject;
 
     private List<Sprite> sprites = new List<Sprite>(); // The list of sprites to use
     private int numCols, numRows; // The number of columns and rows of images to use
+
+    private Vector3[,] imagePositions; // 2D array to store image positions
 
     // Use this for initialization
     void Start () {
@@ -27,12 +30,20 @@ public class InventoryUI : MonoBehaviour {
         imageWidth = (canvasWidth - ((numCols + 1) * margin)) / numCols;
         imageHeight = (canvasHeight - ((numRows + 1) * margin)) / numRows;
 
-        
-
-        
+        // Calculate image positions
+        imagePositions = new Vector3[numRows, numCols];
+        for (int row = 0; row < numRows; row++) {
+            for (int col = 0; col < numCols; col++) {
+                float x = margin + col * (imageWidth + margin);
+                float y = margin + row * (imageHeight + margin);
+                imagePositions[row, col] = new Vector3(x, y, 0f);
+            }
+        }
     }
 
     void Update(){
+        // If e is pressed and the inventory is not being shown show it
+        // If it is being shown delete it
         if (Input.GetKeyDown("e"))
         {
             if (inventoryShown == false)
@@ -41,15 +52,13 @@ public class InventoryUI : MonoBehaviour {
                 Debug.Log("generate inventory");
                 // Place the sprites on the canvas
                 for (int i = 0; i < numImages; i++) {
-                    // Calculate position of image
+                    // Calculate row and column of image
                     int row = i / numCols;
                     int col = i % numCols;
-                    float x = margin + col * (imageWidth + margin);
-                    float y = margin + row * (imageHeight + margin);
 
                     // Create a new GameObject and add a SpriteRenderer component
                     GameObject obj = Instantiate(image, transform);
-                    obj.transform.localPosition = new Vector3(x, y, 0f);
+                    obj.transform.localPosition = imagePositions[row, col];
                     obj.transform.localScale = Vector3.one * imageScale;
                 }
             }
@@ -62,6 +71,12 @@ public class InventoryUI : MonoBehaviour {
                     Destroy(obj);
                 }
             }
+        }
+
+        if (Input.GetKeyDown("q")){
+            GameObject testObj = Instantiate(testObject, transform);
+            testObj.transform.localPosition = imagePositions[2,1];
+            testObj.transform.localScale = Vector3.one / 4;
         }
     }
 }
