@@ -4,27 +4,30 @@ using System;
 
 public class InventoryUI : MonoBehaviour {
 
+    // UI generation variables
     public GameObject image; // The image to use
     public int numImages = 16; // The number of images to place on the canvas
     public float margin = 5; // The margin between images
     public int canvasWidth = 800; // The width of the canvas
     public int canvasHeight = 800; // The height of the canvas
     public float imageScale; // Scale of the Image
-    public bool inventoryShown;
-    float imageWidth ;
+    public bool inventoryShown; // Is the inventory currently out
+    float imageWidth;  
     float imageHeight;
-    public GameObject testObject;
-
-    private List<Sprite> sprites = new List<Sprite>(); // The list of sprites to use
     private int numCols, numRows; // The number of columns and rows of images to use
-
     private Vector3[,] imagePositions; // 2D array to store image positions
 
-    // Use this for initialization
+    // Inventory variables
+    public GameObject testObject;
+    public GameObject[] inventory;
+    public int testGetPosition;
+
     void Start () {
         // Calculate the number of rows and columns
         numCols = (int)Math.Ceiling(Math.Sqrt(numImages));
         numRows = (int)Math.Ceiling((float)numImages / numCols);
+
+        
 
         // Calculate the size of each image
         imageWidth = (canvasWidth - ((numCols + 1) * margin)) / numCols;
@@ -42,6 +45,15 @@ public class InventoryUI : MonoBehaviour {
     }
 
     void Update(){
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+    {
+        testGetPosition--;
+    }
+    else if (Input.GetKeyDown(KeyCode.RightArrow))
+    {
+        testGetPosition++;
+    }
+
         // If e is pressed and the inventory is not being shown show it
         // If it is being shown delete it
         if (Input.GetKeyDown("e"))
@@ -74,8 +86,10 @@ public class InventoryUI : MonoBehaviour {
         }
 
         if (Input.GetKeyDown("q")){
+            int indexRow = (int) testGetPosition / numRows;
+            int indexCol = (int) testGetPosition - (indexRow * numCols);
             GameObject testObj = Instantiate(testObject, transform);
-            testObj.transform.localPosition = imagePositions[2,1];
+            testObj.transform.localPosition = imagePositions[indexRow,indexCol];
             testObj.transform.localScale = Vector3.one / 4;
         }
     }
