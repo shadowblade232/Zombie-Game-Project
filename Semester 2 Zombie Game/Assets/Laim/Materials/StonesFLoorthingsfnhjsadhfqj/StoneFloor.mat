@@ -208,7 +208,7 @@ Material:
     - _NormalMapStrength: 2
     - _NormalScale: 1
     - _OpaqueCullMode: 2
-    - _POMAmplitude: 35
+    - _POMAmplitude: 30
     - _POMSteps: 5
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15

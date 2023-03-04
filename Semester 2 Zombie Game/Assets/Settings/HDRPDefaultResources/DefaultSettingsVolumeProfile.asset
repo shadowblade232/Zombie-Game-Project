@@ -45,10 +45,10 @@ MonoBehaviour:
     m_Value: 0
   numPrimarySteps:
     m_OverrideState: 1
-    m_Value: 64
+    m_Value: 96
   numLightSteps:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 5
   cloudMap:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -547,7 +547,6 @@ MonoBehaviour:
   - {fileID: -9020581545443697587}
   - {fileID: 1679929312606183900}
   - {fileID: 3299109608359073042}
-  - {fileID: 7990287759583723026}
 --- !u!114 &642985130685959500
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -629,10 +628,10 @@ MonoBehaviour:
     m_Value: 64
   m_VolumetricFogBudget:
     m_OverrideState: 1
-    m_Value: 0.33
+    m_Value: 0.5
   m_ResolutionDepthRatio:
     m_OverrideState: 1
-    m_Value: 0.666
+    m_Value: 0.5
   directionalLightsOnly:
     m_OverrideState: 0
     m_Value: 0
@@ -853,7 +852,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.75
   m_RayMaxIterations:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 32
   rayMiss:
     m_OverrideState: 0
@@ -1065,7 +1064,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 3
   rayTracing:
     m_OverrideState: 1
     m_Value: 1
@@ -1103,19 +1102,19 @@ MonoBehaviour:
     m_Value: 1
   m_StepCount:
     m_OverrideState: 1
-    m_Value: 6
+    m_Value: 4
   m_FullResolution:
     m_OverrideState: 1
     m_Value: 0
   m_MaximumRadiusInPixels:
     m_OverrideState: 1
-    m_Value: 40
+    m_Value: 32
   m_BilateralUpsample:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   m_DirectionCount:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   m_RayLength:
     m_OverrideState: 1
     m_Value: 3
@@ -1171,52 +1170,3 @@ MonoBehaviour:
   cascadeShadowBorder3:
     m_OverrideState: 1
     m_Value: 0.07767624
---- !u!114 &7990287759583723026
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b145d2b9ee1ac4f846968484e7485a, type: 3}
-  m_Name: ContactShadows
-  m_EditorClassIdentifier: 
-  active: 1
-  quality:
-    m_OverrideState: 1
-    m_Value: 2
-  enable:
-    m_OverrideState: 1
-    m_Value: 1
-  length:
-    m_OverrideState: 0
-    m_Value: 0.15
-  opacity:
-    m_OverrideState: 0
-    m_Value: 1
-  distanceScaleFactor:
-    m_OverrideState: 0
-    m_Value: 0.5
-  maxDistance:
-    m_OverrideState: 0
-    m_Value: 50
-  minDistance:
-    m_OverrideState: 0
-    m_Value: 0
-  fadeDistance:
-    m_OverrideState: 0
-    m_Value: 5
-  fadeInDistance:
-    m_OverrideState: 0
-    m_Value: 0
-  rayBias:
-    m_OverrideState: 0
-    m_Value: 0.2
-  thicknessScale:
-    m_OverrideState: 0
-    m_Value: 0.15
-  m_SampleCount:
-    m_OverrideState: 1
-    m_Value: 16
