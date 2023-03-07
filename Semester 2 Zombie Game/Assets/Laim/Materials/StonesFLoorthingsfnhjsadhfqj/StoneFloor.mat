@@ -13,13 +13,12 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DEPTHOFFSET_ON
   - _DISABLE_SSR_TRANSPARENT
   m_InvalidKeywords:
   - _CONSERVATIVE_DEPTH_OFFSET
   - _NORMALMAP_TANGENT_SPACE
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2225
   stringTagMap:
@@ -28,8 +27,8 @@ Material:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-  - RayTracingPrepass
   - MOTIONVECTORS
+  - RayTracingPrepass
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -165,7 +164,7 @@ Material:
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
-    - _DepthOffsetEnable: 1
+    - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
@@ -209,8 +208,8 @@ Material:
     - _NormalMapStrength: 2
     - _NormalScale: 1
     - _OpaqueCullMode: 2
-    - _POMAmplitude: 35
-    - _POMSteps: 4
+    - _POMAmplitude: 30
+    - _POMSteps: 5
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5

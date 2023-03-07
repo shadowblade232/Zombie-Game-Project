@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 525.85046, g: 846.5416, b: 1686.6807, a: 1}
+  m_IndirectSpecularColor: {r: 500.83655, g: 827.0928, b: 1741.7767, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -259,14 +259,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285752950}
-  m_LocalRotation: {x: 0.8564825, y: -0.33780348, z: -0.09230636, w: 0.37921768}
+  m_LocalRotation: {x: 0.81511843, y: -0.24992068, z: -0.07942864, w: 0.5165392}
   m_LocalPosition: {x: 1, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 395.96, y: 210.788, z: -126.738}
+  m_LocalEulerAnglesHint: {x: 413.358, y: 220.51, z: -124.899}
 --- !u!114 &285752953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_IESSpot: {fileID: 0}
   m_IncludeForRayTracing: 1
   m_AreaLightShadowCone: 120
-  m_UseScreenSpaceShadows: 0
+  m_UseScreenSpaceShadows: 1
   m_InteractsWithSky: 1
   m_AngularDiameter: 0.5
   m_FlareSize: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_SurfaceTexture: {fileID: 0}
   m_SurfaceTint: {r: 1, g: 1, b: 1, a: 1}
   m_Distance: 1.5e+11
-  m_UseRayTracedShadows: 0
+  m_UseRayTracedShadows: 1
   m_NumRayTracingSamples: 4
   m_FilterTracedShadow: 1
   m_FilterSizeTraced: 16
@@ -347,9 +347,9 @@ MonoBehaviour:
   m_ShadowFadeDistance: 10000
   m_UseContactShadow:
     m_Override: 1
-    m_UseOverride: 1
+    m_UseOverride: 0
     m_Level: 2
-  m_RayTracedContactShadow: 1
+  m_RayTracedContactShadow: 0
   m_ShadowTint: {r: 0, g: 0, b: 0, a: 1}
   m_PenumbraTint: 0
   m_NormalBias: 0.75
@@ -1512,7 +1512,7 @@ MonoBehaviour:
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
-  m_VolumetricDimmer: 1
+  m_VolumetricDimmer: 2
   m_LightUnit: 2
   m_FadeDistance: 10000
   m_VolumetricFadeDistance: 10000
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   m_IESSpot: {fileID: 0}
   m_IncludeForRayTracing: 1
   m_AreaLightShadowCone: 120
-  m_UseScreenSpaceShadows: 0
+  m_UseScreenSpaceShadows: 1
   m_InteractsWithSky: 1
   m_AngularDiameter: 2
   m_FlareSize: 1
@@ -1543,7 +1543,7 @@ MonoBehaviour:
   m_SurfaceTexture: {fileID: 2800000, guid: 929278e8348d477459f55aa38d68e36c, type: 3}
   m_SurfaceTint: {r: 1, g: 1, b: 1, a: 1}
   m_Distance: 1.5e+11
-  m_UseRayTracedShadows: 0
+  m_UseRayTracedShadows: 1
   m_NumRayTracingSamples: 4
   m_FilterTracedShadow: 1
   m_FilterSizeTraced: 16
@@ -1574,9 +1574,9 @@ MonoBehaviour:
   m_ShadowFadeDistance: 10000
   m_UseContactShadow:
     m_Override: 1
-    m_UseOverride: 1
-    m_Level: 0
-  m_RayTracedContactShadow: 1
+    m_UseOverride: 0
+    m_Level: 2
+  m_RayTracedContactShadow: 0
   m_ShadowTint: {r: 0, g: 0, b: 0, a: 1}
   m_PenumbraTint: 0
   m_NormalBias: 0.75
