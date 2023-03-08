@@ -21,17 +21,22 @@ public class TimeOfDay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time = Mathf.Repeat(Time.time / timeScale, 24);
+        //time = Mathf.Repeat(Time.time / timeScale, 24);
+        time = -0.5f * Mathf.Cos(Mathf.PI * Time.time / timeScale) + 0.5f;
+        if ((0.5f * Mathf.Sin(Mathf.PI * Time.time / timeScale) * (Mathf.PI / timeScale)) < 0)
+        {
+            time = -time + 1;
+        }
         float yRotation = -60;
         
-        rotationVSun = new Vector3(time * 15, yRotation, 0);
-        rotationVMoon = new Vector3(time * 15 + 180, yRotation, 0);
+        rotationVSun = new Vector3(time * 360, yRotation, 0);
+        rotationVMoon = new Vector3(time * 360 + 180, yRotation, 0);
         rotationQ.eulerAngles = rotationVSun;
         sun.transform.rotation = rotationQ;
         rotationQ.eulerAngles = rotationVMoon;
         moon.transform.rotation = rotationQ;
 
-        if (time > 12)
+        if (time > 0.5)
         {
             moon.GetComponent<Light>().shadows = LightShadows.Soft;
             sun.GetComponent<Light>().shadows = LightShadows.None;
