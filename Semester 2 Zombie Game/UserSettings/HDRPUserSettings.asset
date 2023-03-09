@@ -12,7 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3b9f3ac26b8524bab7722d06b49724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  m_WizardPopupAlreadyShownOnce: 0
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  m_WizardPopupAlreadyShownOnce: 0
+=======
+<<<<<<< HEAD
   m_WizardPopupAlreadyShownOnce: 0
   m_WizardActiveTab: 2
+=======
+  m_WizardPopupAlreadyShownOnce: 1
+>>>>>>> b823f0c3915a0343446e8028a2c6c1d0eea537cc
+  m_WizardActiveTab: 0
+>>>>>>> 5c33653dfb9a35105b04c3f7fc4832582447255c
+=======
+  m_WizardPopupAlreadyShownOnce: 1
+>>>>>>> 55444b32fa7a50bc703615565b12414871c7143e
+  m_WizardActiveTab: 2
+>>>>>>> 30d4dcede8de8e188dbf09be17b03a06bd2face0
   m_WizardNeedRestartAfterChangingToDX12: 0
   m_WizardNeedToRunFixAllAgainAfterDomainReload: 0
