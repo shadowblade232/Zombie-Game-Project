@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StoneFloor
-  m_Shader: {fileID: -6465566751694194690, guid: eeeb5428453a2d94e8d462e024d4e753,
+  m_Shader: {fileID: -6465566751694194690, guid: 1d867a121127d8949ad7f9dd1f4cf958,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
