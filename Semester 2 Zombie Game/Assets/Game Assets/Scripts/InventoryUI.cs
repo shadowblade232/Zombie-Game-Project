@@ -7,11 +7,11 @@ public class InventoryUI : MonoBehaviour {
     // UI generation variables
     public GameObject image; // The image to use
     public int numImages = 16; // The number of images to place on the canvas
-    public float margin = 5; // The margin between images
+    public float margin = 5; // The margin between images   
     public int canvasWidth = 800; // The width of the canvas
     public int canvasHeight = 800; // The height of the canvas
     public float imageScale; // Scale of the Image
-    public bool inventoryShown; // Is the inventory currently out
+    public bool inventoryShown = false; // Is the inventory currently out
     float imageWidth;  
     float imageHeight;
     private int numCols, numRows; // The number of columns and rows of images to use
@@ -25,9 +25,7 @@ public class InventoryUI : MonoBehaviour {
     void Start () {
         // Calculate the number of rows and columns
         numCols = (int)Math.Ceiling(Math.Sqrt(numImages));
-        numRows = (int)Math.Ceiling((float)numImages / numCols);
-
-        
+        numRows = (int)Math.Ceiling((float)numImages / numCols);        
 
         // Calculate the size of each image
         imageWidth = (canvasWidth - ((numCols + 1) * margin)) / numCols;
@@ -45,14 +43,19 @@ public class InventoryUI : MonoBehaviour {
     }
 
     void Update(){
+        if (inventoryShown == false){
+            Cursor.visible = false;
+        } else{
+            Cursor.visible = true;
+        }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
-    {
-        testGetPosition--;
-    }
-    else if (Input.GetKeyDown(KeyCode.RightArrow))
-    {
-        testGetPosition++;
-    }
+        {
+            testGetPosition--;
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            testGetPosition++;
+        }
 
         // If e is pressed and the inventory is not being shown show it
         // If it is being shown delete it
@@ -93,4 +96,24 @@ public class InventoryUI : MonoBehaviour {
             testObj.transform.localScale = Vector3.one / 4;
         }
     }
+
+    int GetLowestOpenPosition(int[] array) {
+        int lowestOpenPosition = 0;
+    
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] == 0) // assumes 0 represents an open position
+            {
+                lowestOpenPosition = i;
+                break;
+            }
+        }
+    
+        return lowestOpenPosition;
+    }
+
+   public void addItem(GameObject item){
+       GroundObject groundObject;
+       groundObject = item.GetComponent<GroundObject>();
+   }
 }
