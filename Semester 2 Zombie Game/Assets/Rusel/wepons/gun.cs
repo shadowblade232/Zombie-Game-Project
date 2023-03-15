@@ -1,4 +1,5 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class gun : MonoBehaviour
@@ -11,35 +12,37 @@ public class gun : MonoBehaviour
     public float fireRate = 20f;
     public Camera fpsCam;
     private float nextFire = 0f;
+    public 
+    
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetButton("fire") && Time.time >= nextFire)
+        if (Input.GetButton("Fire1") && Time.time >= nextFire)
         {
             nextFire = Time.time + 1f / fireRate;
             shoot();
         }
 
-        if (input.GetButtonDown("fire"))
+        if (Input.GetButtonDown("Fire1"))
         {
             shoot();
         }
-
+        
 
     }
     
     void shoot()
     {
         RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.postition, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
+            
             target targ = hit.transform.GetComponent<target>();
             if (targ != null)
             {
-                target.damage(damage); 
+                targ.damage(damage); 
             }
             if (hit.rigidbody != null)
             {
@@ -48,7 +51,7 @@ public class gun : MonoBehaviour
 
         }
 
-        
+        Debug.Log("pew");
 
     }
 }
