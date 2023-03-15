@@ -115,5 +115,6 @@ public class InventoryUI : MonoBehaviour {
    public void addItem(GameObject item){
        GroundObject groundObject;
        groundObject = item.GetComponent<GroundObject>();
+
    }
 }
