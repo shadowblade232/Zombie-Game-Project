@@ -547,6 +547,8 @@ MonoBehaviour:
   - {fileID: -9020581545443697587}
   - {fileID: 1679929312606183900}
   - {fileID: 3299109608359073042}
+  - {fileID: 1871942028206994755}
+  - {fileID: 5611950333551958945}
 --- !u!114 &642985130685959500
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -658,7 +660,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0.1
   scatter:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.7
   tint:
     m_OverrideState: 0
@@ -668,7 +670,7 @@ MonoBehaviour:
     m_Value: {fileID: 2800000, guid: a82dab21d60c1df48b373e91bb1ef34b, type: 3}
   dirtIntensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 1.5
   anamorphic:
     m_OverrideState: 0
     m_Value: 1
@@ -696,13 +698,13 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 1
   enable:
     m_OverrideState: 1
     m_Value: 1
   tracing:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 2
   rayMiss:
     m_OverrideState: 0
     m_Value: 3
@@ -714,16 +716,16 @@ MonoBehaviour:
     m_Value: 0
   m_MaxRaySteps:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 64
   m_DenoiseSS:
     m_OverrideState: 1
     m_Value: 1
   m_HalfResolutionDenoiserSS:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   m_DenoiserRadiusSS:
     m_OverrideState: 1
-    m_Value: 0.75
+    m_Value: 0.5
   m_SecondDenoiserPassSS:
     m_OverrideState: 1
     m_Value: 1
@@ -764,7 +766,7 @@ MonoBehaviour:
     m_Value: 0
   m_DenoiserRadius:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.66
   m_SecondDenoiserPass:
     m_OverrideState: 1
     m_Value: 1
@@ -774,6 +776,31 @@ MonoBehaviour:
   receiverMotionRejection:
     m_OverrideState: 0
     m_Value: 1
+--- !u!114 &1871942028206994755
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598e2d32e2c7b0c418e030c3236d663a, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  quality:
+    m_OverrideState: 1
+    m_Value: 1
+  spectralLut:
+    m_OverrideState: 0
+    m_Value: {fileID: 2800000, guid: 3f69bf5e1dbbde7468101fe9973c55f1, type: 3}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.05
+  m_MaxSamples:
+    m_OverrideState: 1
+    m_Value: 6
 --- !u!114 &1932259527246508038
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -820,7 +847,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 3
   enabled:
     m_OverrideState: 1
     m_Value: 1
@@ -853,7 +880,7 @@ MonoBehaviour:
     m_Value: 0.75
   m_RayMaxIterations:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 48
   rayMiss:
     m_OverrideState: 0
     m_Value: 3
@@ -888,7 +915,7 @@ MonoBehaviour:
     m_Value: 1
   m_FullResolution:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   sampleCount:
     m_OverrideState: 0
     m_Value: 1
@@ -1049,6 +1076,34 @@ MonoBehaviour:
   proceduralSoftness:
     m_OverrideState: 0
     m_Value: 0.5
+--- !u!114 &5611950333551958945
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1bfcd0f0fa7b8468f281d6bbbaf320, type: 3}
+  m_Name: LensDistortion
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.15
+  xMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+  yMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+  center:
+    m_OverrideState: 0
+    m_Value: {x: 0.5, y: 0.5}
+  scale:
+    m_OverrideState: 1
+    m_Value: 1.005
 --- !u!114 &5969800539304376966
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1151,7 +1206,7 @@ MonoBehaviour:
     m_Value: 4
   cascadeShadowSplit0:
     m_OverrideState: 1
-    m_Value: 0.0335
+    m_Value: 0.05
   cascadeShadowSplit1:
     m_OverrideState: 1
     m_Value: 0.132
@@ -1160,13 +1215,13 @@ MonoBehaviour:
     m_Value: 0.25
   cascadeShadowBorder0:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.8
   cascadeShadowBorder1:
     m_OverrideState: 1
-    m_Value: 0.4773684
+    m_Value: 0.4878049
   cascadeShadowBorder2:
     m_OverrideState: 1
-    m_Value: 0.2765625
+    m_Value: 0.33898306
   cascadeShadowBorder3:
     m_OverrideState: 1
-    m_Value: 0.07767624
+    m_Value: 0.053333335
