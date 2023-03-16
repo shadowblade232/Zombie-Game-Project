@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Value: 1
   fadeInStart:
     m_OverrideState: 1
-    m_Value: 2500
+    m_Value: 0
   fadeInDistance:
     m_OverrideState: 1
     m_Value: 0
@@ -630,10 +630,10 @@ MonoBehaviour:
     m_Value: 64
   m_VolumetricFogBudget:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.33
   m_ResolutionDepthRatio:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.666
   directionalLightsOnly:
     m_OverrideState: 0
     m_Value: 0
@@ -704,7 +704,7 @@ MonoBehaviour:
     m_Value: 1
   tracing:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 4
   rayMiss:
     m_OverrideState: 0
     m_Value: 3
@@ -766,7 +766,7 @@ MonoBehaviour:
     m_Value: 0
   m_DenoiserRadius:
     m_OverrideState: 1
-    m_Value: 0.66
+    m_Value: 0.5
   m_SecondDenoiserPass:
     m_OverrideState: 1
     m_Value: 1
