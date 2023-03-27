@@ -11,7 +11,7 @@ public class ZombieController : MonoBehaviour
     NavMeshAgent agent; // the NavMeshAgent component
     private Vector3 targetPosition; // the target position for the zombie to move to
     private Rigidbody rb; // the Rigidbody component
-    private PlayerUI playerUi; // the PlayerUI component
+    private PlayerInfo playerUi; // the PlayerUI component
     private Vector3 spawnPosition; // the initial position of the zombie
     public float spawnDistance; // the distance from the spawn position to start chasing the player
     //vision variables
@@ -44,7 +44,7 @@ public class ZombieController : MonoBehaviour
         starterMaterial = gameObject.GetComponent<MeshRenderer>().material; // get the starting material of the zombie
         rb = gameObject.GetComponent<Rigidbody>(); // get the Rigidbody component
         target = player.transform; // set the target to the player object
-        playerUi = GetComponent<PlayerUI>(); // get the PlayerUI component
+        playerUi = GetComponent<PlayerInfo>(); // get the PlayerUI component
         spawnPosition = gameObject.transform.position; // set the spawn position to the initial position of the zombie
     }
 
