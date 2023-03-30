@@ -32,7 +32,7 @@ void Start()
     Cursor.lockState = CursorLockMode.Locked;
 
     // Find the Canvas game object and get its inventoryShown variable
-    canvas = GameObject.Find("Canvas");
+    canvas = GameObject.Find("InventoryCanvas");
     inventoryShown = canvas.GetComponent<InventoryUI>().inventoryShown;
 }
 
