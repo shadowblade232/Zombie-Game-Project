@@ -17,7 +17,7 @@ public class MouseTextHover : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     void Start()
     {
         rt = button.GetComponent<RectTransform>();
-        rt.sizeDelta = new Vector2(width, height);
+        originalSize = rt.sizeDelta;
     }
 
     // Update is called once per frame
@@ -29,7 +29,6 @@ public class MouseTextHover : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public void OnPointerEnter(PointerEventData data)
     {
         Debug.Log("enter");
-        originalSize = rt.sizeDelta;
         targetSize = new Vector2(width + 50, height + 50);
 
         StartCoroutine(ChangeSize());

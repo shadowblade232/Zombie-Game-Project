@@ -2,20 +2,31 @@ using UnityEngine;
 
 public class CameraRayCast : MonoBehaviour
 {
-    public string objectLookingAt = " ";
-    public GameObject gameObjectLookingAt;
+    public float overlapRadius = 5.0f;
+    public GameObject lookingAt;
+
     private void Update()
     {
-        if(Physics.Raycast(transform.position, transform.forward, out var hit, Mathf.Infinity))
-        {        
-            var obj = hit.collider.gameObject;
-                if(obj.tag == "Ground Object"){    
-                    Debug.Log($"looking at {obj.name}", this);
-                    objectLookingAt = obj.name;
-                    gameObjectLookingAt = obj;
-                } else{
-                    objectLookingAt = " ";
-                }
+        lookingAt = DetectObject();
+    }
+
+    public GameObject DetectObject()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, overlapRadius);
+
+        GameObject closestObject = null;
+        float closestDistance = Mathf.Infinity;
+
+        foreach (Collider collider in colliders)
+        {
+            float distanceToCollider = Vector3.Distance(transform.position, collider.transform.position);
+            if (distanceToCollider < closestDistance)
+            {
+                closestDistance = distanceToCollider;
+                closestObject = collider.gameObject;
+            }
         }
+        Debug.Log("Looking at:" + closestObject.ToString());
+        return closestObject;
     }
 }

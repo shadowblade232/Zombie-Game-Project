@@ -42,11 +42,10 @@ public class PlayerInfo : MonoBehaviour
         healthText.transform.localPosition = new Vector2(850 * averageScale, 500 * averageScale);
         healthText.fontSize = 94 * averageScale;
 
-        testLooking = cameraRayCast.objectLookingAt;
-        lookingAt.text = cameraRayCast.objectLookingAt;
+     
 
         if(Input.GetKeyDown("r")){
-            inventoryUI.addItem(cameraRayCast.gameObjectLookingAt);
+            inventoryUI.addItem(cameraRayCast.lookingAt);
         }
     }
 }
