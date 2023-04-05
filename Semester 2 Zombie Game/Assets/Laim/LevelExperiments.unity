@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 476.86533, g: 797.45105, b: 1730.0139, a: 1}
+  m_IndirectSpecularColor: {r: 476.7041, g: 797.2895, b: 1729.6252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -46108,10 +46108,10 @@ GameObject:
   - component: {fileID: 1099058628}
   - component: {fileID: 1099058627}
   - component: {fileID: 1099058626}
-  - component: {fileID: 1099058630}
   - component: {fileID: 1099058631}
+  - component: {fileID: 1099058632}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: PlayerController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46198,31 +46198,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1099058630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099058625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26e2261e7d1668746aa23be6169b4721, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalInput: 0
-  verticalInput: 0
-  speed: 5
-  mouseSensitivity: 10
-  jumpForce: 250
-  rb: {fileID: 1099058631}
-  maxSpeed: 10
-  walkSpeed: 5
-  baseSpeed: 5
-  sprintMultiplier: 2
-  health: 100
-  ammo: 25
-  inventoryShown: 0
 --- !u!54 &1099058631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46231,7 +46206,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099058625}
   serializedVersion: 2
-  m_Mass: 80
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -46239,6 +46214,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1099058632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099058625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01791496ef79f58439c7d37404cf10c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 5
+  lookSensitivity: 2
+  maxLookUp: 90
+  maxLookDown: -90
 --- !u!1001 &1102623042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87443,7 +87435,6 @@ GameObject:
   - component: {fileID: 2046600683}
   - component: {fileID: 2046600682}
   - component: {fileID: 2046600685}
-  - component: {fileID: 2046600686}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -87642,20 +87633,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!114 &2046600686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2046600681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50b5f212879823f459d68ad53a60c7cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 2
-  player: {fileID: 1099058629}
 --- !u!1001 &2048897101
 PrefabInstance:
   m_ObjectHideFlags: 0
