@@ -12,7 +12,7 @@ public class gun : MonoBehaviour
     public float fireRate = 20f;
     public Camera fpsCam;
     private float nextFire = 0f;
-    public 
+   
     
 
     // Update is called once per frame
@@ -25,11 +25,11 @@ public class gun : MonoBehaviour
             shoot();
         }
 
-        if (Input.GetButtonDown("Fire1"))
+       /* if (Input.GetButtonDown("Fire1"))
         {
             shoot();
         }
-        
+        */
 
     }
     
@@ -42,16 +42,16 @@ public class gun : MonoBehaviour
             target targ = hit.transform.GetComponent<target>();
             if (targ != null)
             {
-                targ.damage(damage); 
-            }
-            if (hit.rigidbody != null)
-            {
-                hit.rigidbody.AddForce(-hit.normal * impactFRC);
-            }
+                targ.damage(damage);
 
+                if (hit.rigidbody != null)
+                {
+                    hit.rigidbody.AddForce(-hit.normal * impactFRC);
+                }
+            }
         }
 
-        Debug.Log("pew");
+       // Debug.Log("pew");
 
     }
 }

@@ -7,7 +7,7 @@ public class ZombieController : MonoBehaviour
 {
     //basic variables
     private Transform target; // the target the zombie is currently chasing
-    public GameObject player; // the player object
+    private GameObject player; // the player object
     NavMeshAgent agent; // the NavMeshAgent component
     private Vector3 targetPosition; // the target position for the zombie to move to
     private Rigidbody rb; // the Rigidbody component
@@ -39,7 +39,7 @@ public class ZombieController : MonoBehaviour
 
     void Start()
     {
-        //player = GameObject.FindGameObjectWithTag("player"); // find the player object by tag
+        player = GameObject.Find("player"); // find the player object by tag
         agent = GetComponent<NavMeshAgent>(); // get the NavMeshAgent component
         starterMaterial = gameObject.GetComponent<MeshRenderer>().material; // get the starting material of the zombie
         rb = gameObject.GetComponent<Rigidbody>(); // get the Rigidbody component
