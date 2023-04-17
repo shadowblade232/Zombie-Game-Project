@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 public float horizontalInput;
 public float verticalInput;
 public float speed = 5.0f;
-public float mouseSensitivity = 2.0f;
+public float mouseSensitivity = 1.0f;
 public float jumpForce = 10.0f;
 public Rigidbody rb;
 public float maxSpeed = 10f;
@@ -83,7 +83,7 @@ void FixedUpdate()
 bool IsGrounded()
 {        
     // Check if the player is grounded by casting a ray from their current position downwards
-    if (gameObject.transform.position.y < 3)
+    if (gameObject.transform.position.y < 2)
     {
         return true;  
     }
