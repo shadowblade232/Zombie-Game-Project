@@ -8,7 +8,7 @@ public class ZombieController : MonoBehaviour
     //basic variables
     private Transform target; // the target the zombie is currently chasing
     private GameObject player; // the player object
-    NavMeshAgent agent; // the NavMeshAgent component
+    private NavMeshAgent agent; // the NavMeshAgent component
     private Vector3 targetPosition; // the target position for the zombie to move to
     private Rigidbody rb; // the Rigidbody component
     private PlayerInfo playerUi; // the PlayerUI component
