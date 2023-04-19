@@ -42,7 +42,7 @@ MonoBehaviour:
     m_Value: 2500
   fadeInDistance:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 5000
   numPrimarySteps:
     m_OverrideState: 1
     m_Value: 96
@@ -464,16 +464,16 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   sphericalMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   seaLevel:
     m_OverrideState: 0
     m_Value: -34.34
   planetaryRadius:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 6378100
   planetCenterPosition:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0, y: -6378100, z: 0}
   airDensityR:
     m_OverrideState: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   numberOfBounces:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 3
   groundTint:
     m_OverrideState: 1
@@ -525,7 +525,7 @@ MonoBehaviour:
     m_Value: {fileID: 8900000, guid: 41bdd8a9154b70642ba9439152f2e0b9, type: 3}
   spaceEmissionMultiplier:
     m_OverrideState: 1
-    m_Value: 80
+    m_Value: 100
   spaceRotation:
     m_OverrideState: 0
     m_Value: {x: 0, y: 0, z: 0}
@@ -606,8 +606,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   maxFogDistance:
-    m_OverrideState: 0
-    m_Value: 5000
+    m_OverrideState: 1
+    m_Value: 500000
   mipFogMaxMip:
     m_OverrideState: 0
     m_Value: 0.5
@@ -658,7 +658,7 @@ MonoBehaviour:
     m_Value: 64
   m_VolumetricFogBudget:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.25
   m_ResolutionDepthRatio:
     m_OverrideState: 1
     m_Value: 0.5
@@ -698,7 +698,7 @@ MonoBehaviour:
     m_Value: {fileID: 2800000, guid: a82dab21d60c1df48b373e91bb1ef34b, type: 3}
   dirtIntensity:
     m_OverrideState: 1
-    m_Value: 1.5
+    m_Value: 3
   anamorphic:
     m_OverrideState: 0
     m_Value: 1
@@ -726,7 +726,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 0
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -744,16 +744,16 @@ MonoBehaviour:
     m_Value: 0
   m_MaxRaySteps:
     m_OverrideState: 1
-    m_Value: 64
+    m_Value: 32
   m_DenoiseSS:
     m_OverrideState: 1
     m_Value: 1
   m_HalfResolutionDenoiserSS:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   m_DenoiserRadiusSS:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.75
   m_SecondDenoiserPassSS:
     m_OverrideState: 1
     m_Value: 1
@@ -773,13 +773,13 @@ MonoBehaviour:
     m_Value: 50
   m_ClampValue:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: 0.5
   mode:
     m_OverrideState: 1
     m_Value: 1
   m_FullResolution:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   sampleCount:
     m_OverrideState: 0
     m_Value: 2
@@ -791,16 +791,16 @@ MonoBehaviour:
     m_Value: 1
   m_HalfResolutionDenoiser:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   m_DenoiserRadius:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.66
   m_SecondDenoiserPass:
     m_OverrideState: 1
     m_Value: 1
   m_MaxMixedRaySteps:
     m_OverrideState: 1
-    m_Value: 64
+    m_Value: 32
   receiverMotionRejection:
     m_OverrideState: 0
     m_Value: 1
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   rayTracing:
     m_OverrideState: 1
     m_Value: 1
@@ -1067,31 +1067,31 @@ MonoBehaviour:
     m_Value: 1
   m_StepCount:
     m_OverrideState: 1
-    m_Value: 16
+    m_Value: 4
   m_FullResolution:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   m_MaximumRadiusInPixels:
     m_OverrideState: 1
-    m_Value: 80
+    m_Value: 32
   m_BilateralUpsample:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   m_DirectionCount:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 1
   m_RayLength:
     m_OverrideState: 1
-    m_Value: 20
+    m_Value: 3
   m_SampleCount:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 2
   m_Denoise:
     m_OverrideState: 1
     m_Value: 1
   m_DenoiserRadius:
     m_OverrideState: 1
-    m_Value: 0.65
+    m_Value: 0.5
 --- !u!114 &6259073586542349652
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   enabled:
     m_OverrideState: 1
     m_Value: 1
@@ -1119,10 +1119,10 @@ MonoBehaviour:
     m_Value: 2
   m_MinSmoothness:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.6
   m_SmoothnessFadeStart:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.7
   reflectSky:
     m_OverrideState: 0
     m_Value: 1
@@ -1139,8 +1139,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.75
   m_RayMaxIterations:
-    m_OverrideState: 0
-    m_Value: 32
+    m_OverrideState: 1
+    m_Value: 8
   rayMiss:
     m_OverrideState: 0
     m_Value: 3
@@ -1160,16 +1160,16 @@ MonoBehaviour:
     m_Value: 50
   m_ClampValue:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.8
   m_Denoise:
     m_OverrideState: 1
     m_Value: 1
   m_DenoiserRadius:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 8
   m_AffectSmoothSurfaces:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   mode:
     m_OverrideState: 1
     m_Value: 1
@@ -1184,7 +1184,7 @@ MonoBehaviour:
     m_Value: 1
   m_RayMaxIterationsRT:
     m_OverrideState: 1
-    m_Value: 48
+    m_Value: 32
 --- !u!114 &7686318427622180703
 MonoBehaviour:
   m_ObjectHideFlags: 3
