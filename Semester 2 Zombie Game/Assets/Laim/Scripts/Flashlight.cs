@@ -10,6 +10,7 @@ public class Flashlight : MonoBehaviour
     {
         // Find the flashlight component attached to this game object
         flashlight = GetComponent<Light>();
+        flashlight.enabled = false;
     }
 
     private void Update()

@@ -14,6 +14,7 @@ public class GoodPlayerController : MonoBehaviour
     private float yRotation;
     private float xRotation;
     private Camera playerCamera;
+    private bool isOnGround;
 
     private void Start()
     {
@@ -32,7 +33,7 @@ public class GoodPlayerController : MonoBehaviour
         rb.MovePosition(transform.position + transform.TransformDirection(movement));
 
         // Jump
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && (isOnGround))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
@@ -47,6 +48,22 @@ public class GoodPlayerController : MonoBehaviour
 
         transform.eulerAngles = new Vector3(0f, yRotation, 0f);
         playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnGround = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnGround = false;
+        }
     }
 }
 
