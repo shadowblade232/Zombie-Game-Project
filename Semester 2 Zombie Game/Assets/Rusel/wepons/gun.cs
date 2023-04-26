@@ -12,9 +12,13 @@ public class gun : MonoBehaviour
     public float fireRate = 20f;
     public Camera fpsCam;
     private float nextFire = 0f;
-   
-    
+    public GameObject anim;
 
+    void Start()
+    {
+
+       // Animation anim = gameObject.GetComponent<MuzzleFlash>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -50,8 +54,9 @@ public class gun : MonoBehaviour
                 }
             }
         }
+        //anim.Play("Muzzle Flash");
 
-       // Debug.Log("pew");
+        // Debug.Log("pew");
 
     }
 }

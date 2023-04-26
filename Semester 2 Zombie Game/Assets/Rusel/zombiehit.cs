@@ -7,7 +7,7 @@ public class zombiehit : MonoBehaviour
     
     // Start is called before the first frame update
    
-    
+    /*
     void OnCollisionEnter(Collision collision)
     {
         player code = gameObject.FindWithTag.("player").GetComponent<playerre>();
@@ -17,4 +17,5 @@ public class zombiehit : MonoBehaviour
             code.hit();
         }
     }
+    */
 }
