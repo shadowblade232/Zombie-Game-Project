@@ -10,7 +10,7 @@ public class zombiehit : MonoBehaviour
     
     void OnCollisionEnter(Collision collision)
     {
-        playerre code = gameObject.FindWithTag.("player").GetComponent<playerre>();
+        player code = gameObject.FindWithTag.("player").GetComponent<playerre>();
 
         if (collision.gameObject.tag == "player")
         {
