@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class playerre : MonoBehaviour
 {
+    
     public int playerh = 100;
     // Start is called before the first frame update
-    public void hit()
+    public void hit(int damager)
     {
-        Debug.Log("zhit");
-        playerh = playerh - 10;
+        
+        playerh = playerh - damager;
     }
 
     // Update is called once per frame

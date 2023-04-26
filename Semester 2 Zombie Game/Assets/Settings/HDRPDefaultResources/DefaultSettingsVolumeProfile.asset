@@ -45,10 +45,10 @@ MonoBehaviour:
     m_Value: 5000
   numPrimarySteps:
     m_OverrideState: 1
-    m_Value: 96
+    m_Value: 256
   numLightSteps:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 4
   cloudMap:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -284,7 +284,7 @@ MonoBehaviour:
     m_Value: 1
   ghostingReduction:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   shadows:
     m_OverrideState: 1
     m_Value: 1
@@ -577,6 +577,56 @@ MonoBehaviour:
   - {fileID: 5969800539304376966}
   - {fileID: 6259073586542349652}
   - {fileID: -8832716983232371491}
+  - {fileID: 6341256884075411}
+--- !u!114 &6341256884075411
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b145d2b9ee1ac4f846968484e7485a, type: 3}
+  m_Name: ContactShadows
+  m_EditorClassIdentifier: 
+  active: 1
+  quality:
+    m_OverrideState: 1
+    m_Value: 2
+  enable:
+    m_OverrideState: 1
+    m_Value: 1
+  length:
+    m_OverrideState: 1
+    m_Value: 0.1
+  opacity:
+    m_OverrideState: 0
+    m_Value: 1
+  distanceScaleFactor:
+    m_OverrideState: 1
+    m_Value: 0.8
+  maxDistance:
+    m_OverrideState: 1
+    m_Value: 100
+  minDistance:
+    m_OverrideState: 0
+    m_Value: 0
+  fadeDistance:
+    m_OverrideState: 0
+    m_Value: 5
+  fadeInDistance:
+    m_OverrideState: 0
+    m_Value: 0
+  rayBias:
+    m_OverrideState: 1
+    m_Value: 0.5
+  thicknessScale:
+    m_OverrideState: 1
+    m_Value: 1
+  m_SampleCount:
+    m_OverrideState: 1
+    m_Value: 16
 --- !u!114 &642985130685959500
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -607,7 +657,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   maxFogDistance:
     m_OverrideState: 1
-    m_Value: 500000
+    m_Value: 5000
   mipFogMaxMip:
     m_OverrideState: 0
     m_Value: 0.5
@@ -621,11 +671,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   maximumHeight:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 50
   meanFreePath:
-    m_OverrideState: 0
-    m_Value: 180
+    m_OverrideState: 1
+    m_Value: 300
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
@@ -658,7 +708,7 @@ MonoBehaviour:
     m_Value: 64
   m_VolumetricFogBudget:
     m_OverrideState: 1
-    m_Value: 0.333
+    m_Value: 0.5
   m_ResolutionDepthRatio:
     m_OverrideState: 1
     m_Value: 0.5
@@ -1073,10 +1123,10 @@ MonoBehaviour:
     m_Value: 0
   m_MaximumRadiusInPixels:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 40
   m_BilateralUpsample:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   m_DirectionCount:
     m_OverrideState: 1
     m_Value: 2
@@ -1107,7 +1157,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   enabled:
     m_OverrideState: 1
     m_Value: 1
@@ -1124,23 +1174,23 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0.7
   reflectSky:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   usedAlgorithm:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   depthBufferThickness:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.01
   screenFadeDistance:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.1
   accumulationFactor:
     m_OverrideState: 0
     m_Value: 0.75
   m_RayMaxIterations:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 64
   rayMiss:
     m_OverrideState: 0
     m_Value: 3

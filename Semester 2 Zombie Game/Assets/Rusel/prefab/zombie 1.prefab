@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43df50cb4c5255e4a8faaedcc717565d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  range: 1
+  zombie: {fileID: 606561857669758271}
 --- !u!195 &7112950936139743
 NavMeshAgent:
   m_ObjectHideFlags: 0

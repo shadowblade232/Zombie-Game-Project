@@ -22,7 +22,7 @@ public class spawner : MonoBehaviour
     void Update()
     {
        //spawnIntake spawnloc = gameObject.GetComponent<spawnIntake>();
-        if (already == false && (spawnPointMarker.transform.position - player.transform.position).sqrMagnitude < 10*10)
+        if (already == false && (spawnPointMarker.transform.position - player.transform.position).sqrMagnitude < 20*20)
         {
             Debug.Log("spawn");
             for (int i = 0; i < numOfSpawn; i++)
@@ -36,7 +36,7 @@ public class spawner : MonoBehaviour
 
             // Instantiate(zombie, new Vector3(location.transform.position));
         }
-        if ((spawnPointMarker.transform.position - player.transform.position).sqrMagnitude > 10 * 10)
+        if ((spawnPointMarker.transform.position - player.transform.position).sqrMagnitude > 20 * 20)
         {
             already = false;
         }
