@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class gun : MonoBehaviour
 {
     //damage gun inflicts
@@ -12,33 +13,36 @@ public class gun : MonoBehaviour
     public float fireRate = 20f;
     public Camera fpsCam;
     private float nextFire = 0f;
-    public GameObject anim;
+    public ParticleSystem flash;
 
     void Start()
     {
+        //ParticalSystem anim = ParticalSystem.GetComponent<MuzzleFlash>();
 
-       // Animation anim = gameObject.GetComponent<MuzzleFlash>();
+        // Animation anim = gameObject.GetComponent<MuzzleFlash>();
     }
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetButton("Fire1") && Time.time >= nextFire)
+       /* if (Input.GetButton("Fire1") && Time.time >= nextFire)
         {
             nextFire = Time.time + 1f / fireRate;
             shoot();
         }
+       */
 
-       /* if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             shoot();
         }
-        */
+        
 
     }
     
     void shoot()
     {
+        flash.Play();
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -54,7 +58,7 @@ public class gun : MonoBehaviour
                 }
             }
         }
-        //anim.Play("Muzzle Flash");
+        
 
         // Debug.Log("pew");
 
