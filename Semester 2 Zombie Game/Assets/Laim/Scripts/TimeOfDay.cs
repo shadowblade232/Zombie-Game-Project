@@ -26,18 +26,26 @@ public class TimeOfDay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        time = Mathf.Repeat(Time.time / timeScale, 1);
         
-        time = -0.5f * Mathf.Cos(Mathf.PI * Time.time / timeScale) + 0.5f;
+            /*time = -0.5f * Mathf.Cos(Mathf.PI * Time.time / timeScale) + 0.5f;
 
         if ((0.5f * Mathf.Sin(Mathf.PI * Time.time / timeScale) * (Mathf.PI / timeScale)) < 0)
         {
             time = -time + 1;
         }
+        */
+        time += timeOffset;
 
+        RotateSunAndMoon(time);
+    }
+
+    public void RotateSunAndMoon(float time)
+    {
         float yRotation = -60;
         float zRotation = 40;
 
-        time += timeOffset;
         rotationVSun = new Vector3(time * 360, yRotation, zRotation);
         rotationVMoon = new Vector3(time * 360 + 180, yRotation, zRotation);
 
@@ -46,13 +54,13 @@ public class TimeOfDay : MonoBehaviour
         rotationQ.eulerAngles = rotationVMoon;
         moon.transform.rotation = rotationQ;
 
-        if (time > 0.5)
+        if (time == 0.5)
         {
             moon.GetComponent<Light>().shadows = LightShadows.Soft;
             sun.GetComponent<Light>().shadows = LightShadows.None;
         }
 
-        else
+        else if (time == 0)
         {
             sun.GetComponent<Light>().shadows = LightShadows.Soft;
             moon.GetComponent<Light>().shadows = LightShadows.None;
