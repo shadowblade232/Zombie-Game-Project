@@ -80,7 +80,7 @@ MonoBehaviour:
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 16
-      shadowFilteringQuality: 0
+      shadowFilteringQuality: 2
       punctualLightShadowAtlas:
         shadowAtlasResolution: 4096
         shadowAtlasDepthBits: 16
@@ -107,7 +107,7 @@ MonoBehaviour:
       maxDirectionalShadowMapResolution: 4096
       maxPunctualShadowMapResolution: 4096
       maxAreaShadowMapResolution: 4096
-      supportScreenSpaceShadows: 0
+      supportScreenSpaceShadows: 1
       maxScreenSpaceShadowSlots: 4
       screenSpaceShadowBufferFormat: 48
     decalSettings:
@@ -123,7 +123,7 @@ MonoBehaviour:
       enabled: 1
       useMipBias: 0
       enableDLSS: 1
-      DLSSPerfQualitySetting: 0
+      DLSSPerfQualitySetting: 1
       DLSSUseOptimalSettings: 1
       DLSSSharpness: 0
       maxPercentage: 100
@@ -271,7 +271,7 @@ MonoBehaviour:
   allowShaderVariantStripping: 1
   enableSRPBatcher: 1
   availableMaterialQualityLevels: -1
-  m_DefaultMaterialQualityLevel: 1
+  m_DefaultMaterialQualityLevel: 4
   diffusionProfileSettings: {fileID: 0}
   virtualTexturingSettings:
     streamingCpuCacheSizeInMegaBytes: 256

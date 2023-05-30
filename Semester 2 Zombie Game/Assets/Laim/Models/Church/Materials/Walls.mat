@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Walls
-  m_Shader: {fileID: -6465566751694194690, guid: eeeb5428453a2d94e8d462e024d4e753,
+  m_Shader: {fileID: -6465566751694194690, guid: 1d867a121127d8949ad7f9dd1f4cf958,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoMap:
-        m_Texture: {fileID: 2800000, guid: ec101a2798d99d547a02e263034ce0f5, type: 3}
+        m_Texture: {fileID: 2800000, guid: ede041cb3f2389f48bb2ea4938167a1b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -90,7 +90,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 79b2d51ac9cc19544bbeaaf14f025a4f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2cd51c250361ff64b83d9afdf0976af3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -98,11 +98,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _POM_Displacement_Texture:
-        m_Texture: {fileID: 2800000, guid: effac90c0ce2c3b4396df0c1b6a1aab8, type: 3}
+        m_Texture: {fileID: 2800000, guid: fea74ec2aacb3794a9eb06b7033d8dba, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RoughnessMap:
-        m_Texture: {fileID: 2800000, guid: 907e26bd19d3c374c8eb8014f74b1c00, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7358dfac3d61bdc4d9e0e75d663358fc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
@@ -210,10 +210,10 @@ Material:
     - _MetallicRemapMin: 0
     - _MetalnessStrength: 0
     - _NormalMapSpace: 0
-    - _NormalMapStrength: -2
+    - _NormalMapStrength: -1
     - _NormalScale: 1
     - _OpaqueCullMode: 2
-    - _POMAmplitude: 1000
+    - _POMAmplitude: 5
     - _POMSteps: 5
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
@@ -226,8 +226,8 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _RoughnessStrength: 1
-    - _Saturation: 0.37
+    - _RoughnessStrength: 2
+    - _Saturation: 1
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
@@ -272,6 +272,7 @@ Material:
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
+    - _UVRotation: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
     - _ZTestDepthEqualForOpaque: 3
@@ -297,7 +298,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
     - _UVOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _UVTiling: {r: 20, g: 20, b: 0, a: 0}
+    - _UVTiling: {r: 8, g: 16, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5056008541047989206
 MonoBehaviour:

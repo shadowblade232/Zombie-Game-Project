@@ -266,7 +266,7 @@ Material:
     - _TessellationFactorTriangleSize: 1
     - _TessellationMaxDisplacement: 0.2
     - _TessellationMode: 1
-    - _TessellationOffset: 0
+    - _TessellationOffset: -0.61
     - _TessellationRes: 125
     - _TessellationShapeFactor: 1
     - _TexWorldScale: 1
