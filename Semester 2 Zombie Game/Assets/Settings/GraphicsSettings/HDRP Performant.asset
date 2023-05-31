@@ -128,7 +128,7 @@ MonoBehaviour:
       DLSSSharpness: 0
       maxPercentage: 100
       minPercentage: 50
-      dynResType: 1
+      dynResType: 0
       upsampleFilter: 4
       forceResolution: 0
       forcedPercentage: 100
@@ -271,7 +271,7 @@ MonoBehaviour:
   allowShaderVariantStripping: 1
   enableSRPBatcher: 1
   availableMaterialQualityLevels: 3
-  m_DefaultMaterialQualityLevel: 1
+  m_DefaultMaterialQualityLevel: 4
   diffusionProfileSettings: {fileID: 0}
   virtualTexturingSettings:
     streamingCpuCacheSizeInMegaBytes: 256

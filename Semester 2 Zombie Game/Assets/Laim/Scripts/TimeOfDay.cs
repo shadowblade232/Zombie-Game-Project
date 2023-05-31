@@ -20,7 +20,8 @@ public class TimeOfDay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        sun.SetActive(true);
+        moon.SetActive(false);
     }
 
     // Update is called once per frame
@@ -54,16 +55,20 @@ public class TimeOfDay : MonoBehaviour
         rotationQ.eulerAngles = rotationVMoon;
         moon.transform.rotation = rotationQ;
 
-        if (time == 0.5)
+        if (time > 0.5)
         {
-            moon.GetComponent<Light>().shadows = LightShadows.Soft;
-            sun.GetComponent<Light>().shadows = LightShadows.None;
+            sun.SetActive(false);
+            moon.SetActive(true);
+            //moon.GetComponent<Light>().shadows = LightShadows.Soft;
+            //sun.GetComponent<Light>().shadows = LightShadows.None;
         }
 
-        else if (time == 0)
+        else if (time >= 0 && time <= 0.5)
         {
-            sun.GetComponent<Light>().shadows = LightShadows.Soft;
-            moon.GetComponent<Light>().shadows = LightShadows.None;
+            sun.SetActive(true);
+            moon.SetActive(false);
+            //sun.GetComponent<Light>().shadows = LightShadows.Soft;
+            //moon.GetComponent<Light>().shadows = LightShadows.None;
         }
     }
 }

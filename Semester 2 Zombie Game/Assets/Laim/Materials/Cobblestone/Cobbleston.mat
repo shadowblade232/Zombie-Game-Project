@@ -250,7 +250,7 @@ Material:
     - _TessellationMaxDisplacement: 0.3
     - _TessellationMode: 0
     - _TessellationOffset: 0
-    - _TessellationRes: 10
+    - _TessellationRes: 8
     - _TessellationShapeFactor: 0.75
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
