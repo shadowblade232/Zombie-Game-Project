@@ -32,6 +32,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Layer_13FAD67D:
+        m_Texture: {fileID: 2800000, guid: 9e122d6a09350f24ca3bc88a10d2d5f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_B3921F6:
+        m_Texture: {fileID: 2800000, guid: 73dee838cb97b4f4a84865f750f7365b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_DCDD9B67:
+        m_Texture: {fileID: 2800000, guid: 9e122d6a09350f24ca3bc88a10d2d5f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_FECCF8FA:
+        m_Texture: {fileID: 2800000, guid: 3627a5a0a9a697d43b504ae5ca697ab9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlbedoMap:
         m_Texture: {fileID: 2800000, guid: 73dee838cb97b4f4a84865f750f7365b, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -257,6 +273,7 @@ Material:
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
+    - _UVRotation: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
     - _ZTestDepthEqualForOpaque: 3

@@ -50,6 +50,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Layer_13FAD67D:
+        m_Texture: {fileID: 2800000, guid: 8d8da931b707d054b84633f357097bcc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_B3921F6:
+        m_Texture: {fileID: 2800000, guid: 86a72fc087c653f40b545e3b5174a07d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_DCDD9B67:
+        m_Texture: {fileID: 2800000, guid: 8d8da931b707d054b84633f357097bcc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_FECCF8FA:
+        m_Texture: {fileID: 2800000, guid: 04b423b7334cc154bb89c3dc32adee5b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlbedoMap:
         m_Texture: {fileID: 2800000, guid: 86a72fc087c653f40b545e3b5174a07d, type: 3}
         m_Scale: {x: 1, y: 1}

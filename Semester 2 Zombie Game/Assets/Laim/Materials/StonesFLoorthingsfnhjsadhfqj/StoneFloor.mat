@@ -35,6 +35,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Layer_32E7D0AF:
+        m_Texture: {fileID: 2800000, guid: d191de50a7d6c5145adaadf5fa565016, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_8EBFB21:
+        m_Texture: {fileID: 2800000, guid: 1bff315811f49de4a8551c9cc2a78f63, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_94107C1:
+        m_Texture: {fileID: 2800000, guid: 370b20f5d96e4a141b6d6c2123cd77eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlbedoMap:
         m_Texture: {fileID: 2800000, guid: 1bff315811f49de4a8551c9cc2a78f63, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -220,7 +232,7 @@ Material:
     - _NormalMapStrength: 0
     - _NormalScale: 1
     - _OpaqueCullMode: 2
-    - _POMAmplitude: 20
+    - _POMAmplitude: 25
     - _POMSteps: 4
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15

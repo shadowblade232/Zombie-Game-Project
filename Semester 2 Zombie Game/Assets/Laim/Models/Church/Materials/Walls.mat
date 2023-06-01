@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Walls
-  m_Shader: {fileID: -6465566751694194690, guid: 1d867a121127d8949ad7f9dd1f4cf958,
+  m_Shader: {fileID: -6465566751694194690, guid: eeeb5428453a2d94e8d462e024d4e753,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -33,6 +33,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Layer_13FAD67D:
+        m_Texture: {fileID: 2800000, guid: fea74ec2aacb3794a9eb06b7033d8dba, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_B3921F6:
+        m_Texture: {fileID: 2800000, guid: ede041cb3f2389f48bb2ea4938167a1b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_DCDD9B67:
+        m_Texture: {fileID: 2800000, guid: 7358dfac3d61bdc4d9e0e75d663358fc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_FECCF8FA:
+        m_Texture: {fileID: 2800000, guid: 2cd51c250361ff64b83d9afdf0976af3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlbedoMap:
         m_Texture: {fileID: 2800000, guid: ede041cb3f2389f48bb2ea4938167a1b, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -210,7 +226,7 @@ Material:
     - _MetallicRemapMin: 0
     - _MetalnessStrength: 0
     - _NormalMapSpace: 0
-    - _NormalMapStrength: 0
+    - _NormalMapStrength: -1
     - _NormalScale: 1
     - _OpaqueCullMode: 2
     - _POMAmplitude: 5

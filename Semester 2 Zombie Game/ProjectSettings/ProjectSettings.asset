@@ -898,5 +898,5 @@ PlayerSettings:
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
   forceSRGBBlit: 1
-  virtualTexturingSupportEnabled: 0
+  virtualTexturingSupportEnabled: 1
   insecureHttpOption: 0

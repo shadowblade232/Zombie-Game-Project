@@ -14,6 +14,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHATEST_ON
+  - _ALPHATOMASK_ON
   - _DOUBLESIDED_ON
   - _ENABLE_FOG_ON_TRANSPARENT
   - _SURFACE_TYPE_TRANSPARENT
@@ -35,6 +36,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Layer_68DEE8E0:
+        m_Texture: {fileID: 2800000, guid: a16811ce2eb35f3418ca19261ec9da92, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_7EA0A115:
+        m_Texture: {fileID: 2800000, guid: e102f66dd857b4f45bd9031ee0b73b88, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_94A1A16A:
+        m_Texture: {fileID: 2800000, guid: 6f1a889cc44db44418f7f490d505fb82, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_F2BC706:
+        m_Texture: {fileID: 2800000, guid: aea0844501d5a20498ed95589e1a569b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlbedoMap:
         m_Texture: {fileID: 2800000, guid: a16811ce2eb35f3418ca19261ec9da92, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -154,8 +171,8 @@ Material:
     - _AlphaCutoffShadow: 0.5
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
-    - _AlphaToMask: 0
-    - _AlphaToMaskInspectorValue: 0
+    - _AlphaToMask: 1
+    - _AlphaToMaskInspectorValue: 1
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatMask: 0
