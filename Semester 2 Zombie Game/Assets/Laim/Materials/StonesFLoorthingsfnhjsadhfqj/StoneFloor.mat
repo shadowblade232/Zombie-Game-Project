@@ -8,17 +8,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StoneFloor
-  m_Shader: {fileID: -6465566751694194690, guid: 1d867a121127d8949ad7f9dd1f4cf958,
+  m_Shader: {fileID: -6465566751694194690, guid: 86c66320b52777d43b92fedda0eeeb6a,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DEPTHOFFSET_ON
   - _DISABLE_SSR_TRANSPARENT
   m_InvalidKeywords:
   - _CONSERVATIVE_DEPTH_OFFSET
+  - _DEPTHOFFSET_ON
   - _NORMALMAP_TANGENT_SPACE
-  - _TESSELLATION_PHONG
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -39,12 +38,24 @@ Material:
         m_Texture: {fileID: 2800000, guid: d191de50a7d6c5145adaadf5fa565016, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Layer_545ADD0F:
+        m_Texture: {fileID: 2800000, guid: 370b20f5d96e4a141b6d6c2123cd77eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Layer_8EBFB21:
         m_Texture: {fileID: 2800000, guid: 1bff315811f49de4a8551c9cc2a78f63, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Layer_94107C1:
         m_Texture: {fileID: 2800000, guid: 370b20f5d96e4a141b6d6c2123cd77eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_BA4DE550:
+        m_Texture: {fileID: 2800000, guid: 1bff315811f49de4a8551c9cc2a78f63, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_D226E715:
+        m_Texture: {fileID: 2800000, guid: d191de50a7d6c5145adaadf5fa565016, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AlbedoMap:
@@ -229,10 +240,10 @@ Material:
     - _MetalnessStrength: 0
     - _Midlevel: 0
     - _NormalMapSpace: 0
-    - _NormalMapStrength: 0
+    - _NormalMapStrength: -0.5
     - _NormalScale: 1
     - _OpaqueCullMode: 2
-    - _POMAmplitude: 25
+    - _POMAmplitude: 3
     - _POMSteps: 4
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
@@ -268,14 +279,14 @@ Material:
     - _SupportDecals: 1
     - _SurfaceType: 0
     - _TessellationAmplitude: 0.3
-    - _TessellationBackFaceCullEpsilon: -0.25
-    - _TessellationFactorMaxDistance: 50
+    - _TessellationBackFaceCullEpsilon: 0
+    - _TessellationFactorMaxDistance: 40
     - _TessellationFactorMinDistance: 10
-    - _TessellationFactorTriangleSize: 0
+    - _TessellationFactorTriangleSize: 20
     - _TessellationMaxDisplacement: 0.3
-    - _TessellationMode: 1
+    - _TessellationMode: 0
     - _TessellationOffset: 0
-    - _TessellationRes: 481
+    - _TessellationRes: 35
     - _TessellationShapeFactor: 1
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
@@ -319,7 +330,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
     - _UVOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _UVTiling: {r: 18, g: 18, b: 0, a: 0}
+    - _UVTiling: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3589598794810522865
 MonoBehaviour:
