@@ -31,6 +31,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Layer_13FAD67D:
+        m_Texture: {fileID: 2800000, guid: 33de7c829c3a0224c8975ad93b61b05e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_B3921F6:
+        m_Texture: {fileID: 2800000, guid: 6291fbf5d0e7c4642ad863eaf8b60622, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_DCDD9B67:
+        m_Texture: {fileID: 2800000, guid: 4ef3438267568cd40b87841c3e2c22c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Layer_FECCF8FA:
+        m_Texture: {fileID: 2800000, guid: decb53c07686cc94b860f8e04d438d22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlbedoMap:
         m_Texture: {fileID: 2800000, guid: 6291fbf5d0e7c4642ad863eaf8b60622, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -147,7 +163,7 @@ Material:
     - _Metallic: 0
     - _MetalnessStrength: 0
     - _Mode: 0
-    - _NormalMapStrength: 0
+    - _NormalMapStrength: -1
     - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
     - _Parallax: 0.02
@@ -158,7 +174,7 @@ Material:
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _RoughnessStrength: 0.7
-    - _Saturation: 1
+    - _Saturation: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -186,7 +202,7 @@ Material:
     - _TransparentSortPriority: 0
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
-    - _UVRotation: 0
+    - _UVRotation: 0.2
     - _UVSec: 0
     - _UseShadowThreshold: 0
     - _UseUIAlphaClip: 0
