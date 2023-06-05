@@ -1,15 +1,21 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
-    private bool isPaused = false;
+    private bool isPlaying;
 
+    private void Start()
+    {
+        isPlaying = true;
+        Resume();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isPaused)
+            if (!isPlaying)
                 Resume();
             else
                 Pause();
@@ -18,29 +24,30 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
-        isPaused = true;
+        isPlaying = false;
         Time.timeScale = 0f; // Freeze the game
         pauseMenuUI.SetActive(true);
     }
 
     public void Resume()
     {
-        isPaused = false;
-        Time.timeScale = 1f; // Resume the game
         pauseMenuUI.SetActive(false);
+
+        isPlaying = true;
+        Time.timeScale = 1f; // Resume the game
     }
 
     public void Restart()
     {
         // Implement your restart logic here
         // For example, you can reload the current scene
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void Quit()
-    {
-        // Implement your quit logic here
-        // For example, you can exit the application
-        Application.Quit();
-    }
+    //public void Quit()
+    //{
+    //    // Implement your quit logic here
+    //    // For example, you can exit the application
+    //    Application.Quit();
+    //}
 }
