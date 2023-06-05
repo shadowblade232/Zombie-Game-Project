@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
+using UnityEngine.UI;
 
 public class gun : MonoBehaviour
 {
@@ -14,27 +15,41 @@ public class gun : MonoBehaviour
     public Camera fpsCam;
     private float nextFire = 0f;
     public ParticleSystem flash;
+    public int ammo = 24;
+    private Animation anim;
+    public Animator slide;
+    public TextMeshProUGUI bulletct;
+
 
     void Start()
     {
         //ParticalSystem anim = ParticalSystem.GetComponent<MuzzleFlash>();
-
-        // Animation anim = gameObject.GetComponent<MuzzleFlash>();
+        
+        //slide.anim = GetComponent<Animation>();
     }
     // Update is called once per frame
     void Update()
     {
 
-       /* if (Input.GetButton("Fire1") && Time.time >= nextFire)
-        {
-            nextFire = Time.time + 1f / fireRate;
-            shoot();
-        }
-       */
+        /* if (Input.GetButton("Fire1") && Time.time >= nextFire)
+         {
+             nextFire = Time.time + 1f / fireRate;
+             shoot();
+         }
+        */
+        bulletct.text = ammo.ToString();
 
+       if (Input.GetKey("r"))
+        {
+            ammo = 24;
+        }
         if (Input.GetButtonDown("Fire1"))
         {
-            shoot();
+           if (ammo > 0)
+            {
+                shoot();
+            }
+           
         }
         
 
@@ -43,6 +58,8 @@ public class gun : MonoBehaviour
     void shoot()
     {
         flash.Play();
+        ammo--;
+        slide.Play("slidefire");
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {

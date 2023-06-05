@@ -18,7 +18,7 @@ public class playerre : MonoBehaviour
     {
         if(playerh <= 0)
         {
-            SceneManager.LoadScene("Master Scene");
+            SceneManager.LoadScene("Master Scene 1");
         }
     }
 }

@@ -16,6 +16,7 @@ public class spawner : MonoBehaviour
     {
         spawnIntake[] spawnloc = new spawnIntake[0];
 
+        spawngo(2);
     }
 
     // Update is called once per frame
@@ -25,12 +26,8 @@ public class spawner : MonoBehaviour
         if (already == false && (spawnPointMarker.transform.position - player.transform.position).sqrMagnitude < 20*20)
         {
             Debug.Log("spawn");
-            for (int i = 0; i < numOfSpawn; i++)
-            {
-                spawnloc[i].spawnin();
-                
-            }
 
+            spawngo(3);
             already = true;
 
 
@@ -43,6 +40,16 @@ public class spawner : MonoBehaviour
 
 
 
+
+    }
+
+    public void spawngo(int number)
+    {
+        for (int i = 0; i < numOfSpawn; i++)
+        {
+            spawnloc[i].spawnin(number);
+
+        }
 
     }
 }

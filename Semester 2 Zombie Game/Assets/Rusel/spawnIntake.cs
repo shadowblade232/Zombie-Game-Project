@@ -16,9 +16,11 @@ public class spawnIntake : MonoBehaviour
     {
         
     }
-    public void spawnin()
+    public void spawnin(int q)
     {
-        Debug.Log("pp");
-        Instantiate(zombie, transform.position, transform.rotation);
+        for (int i = 1; i <= q; i++)
+        {
+            Instantiate(zombie, transform.position, transform.rotation);
+        }
     }
 }
