@@ -31,7 +31,7 @@ public class zombiehit : MonoBehaviour
         health.text = "player health= "+ playerh.ToString() + "/100";
         if (playerh <= 0)
         {
-            SceneManager.LoadScene("Master Scene 1");
+            SceneManager.LoadScene("MasterScene");
         }
     }
     

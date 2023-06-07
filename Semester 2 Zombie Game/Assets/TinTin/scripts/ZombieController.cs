@@ -42,7 +42,7 @@ public class ZombieController : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("player"); // find the player object by tag
+        player = GameObject.FindWithTag("player"); // find the player object by tag
         agent = GetComponent<NavMeshAgent>(); // get the NavMeshAgent component
         starterMaterial = gameObject.GetComponent<MeshRenderer>().material; // get the starting material of the zombie
         rb = gameObject.GetComponent<Rigidbody>(); // get the Rigidbody component
