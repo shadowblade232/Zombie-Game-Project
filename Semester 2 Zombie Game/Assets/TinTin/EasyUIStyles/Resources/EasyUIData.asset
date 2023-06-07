@@ -1,0 +1,1870 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5ddedeb87dfcd40b451a1c4ec32ae6, type: 3}
+  m_Name: EasyUIData
+  m_EditorClassIdentifier: 
+  imageList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Menu Background
+    maximize: 0
+    color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+    sprite: {fileID: 21300000, guid: 3e95c97087b4a2d41899f4abf3bce6c3, type: 3}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 0
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 0
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 1
+    previousOrder: 1
+    styleName: Menu Button Background
+    maximize: 0
+    color: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 0.8392157}
+    sprite: {fileID: 21300000, guid: 3e95c97087b4a2d41899f4abf3bce6c3, type: 3}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 0
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 2
+    previousOrder: 2
+    styleName: Toggle Background
+    maximize: 0
+    color: {r: 1, g: 0.3584906, b: 0.8852543, a: 1}
+    sprite: {fileID: 21300000, guid: 3e95c97087b4a2d41899f4abf3bce6c3, type: 3}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 0
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 3
+    previousOrder: 3
+    styleName: Toggle Checkmark
+    maximize: 0
+    color: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
+    sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 1
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 4
+    previousOrder: 0
+    styleName: Main Background
+    maximize: 0
+    color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 0.23529412}
+    sprite: {fileID: 21300000, guid: 9fe0959c711b97c418e832f5cd7f9932, type: 3}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 0
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 5
+    previousOrder: 5
+    styleName: Slider Handle
+    maximize: 0
+    color: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    sprite: {fileID: 21300000, guid: 3e95c97087b4a2d41899f4abf3bce6c3, type: 3}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 0
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 6
+    previousOrder: 0
+    styleName: Slider Background
+    maximize: 0
+    color: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 1}
+    sprite: {fileID: 21300000, guid: 3e95c97087b4a2d41899f4abf3bce6c3, type: 3}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 0
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 7
+    previousOrder: 10
+    styleName: Yellow Icon
+    maximize: 1
+    color: {r: 0.9528302, g: 0.9079505, b: 0.6352201, a: 1}
+    sprite: {fileID: 0}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 1
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 0
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 8
+    previousOrder: 0
+    styleName: Purple Icon
+    maximize: 1
+    color: {r: 1, g: 0.65882355, b: 0.9490196, a: 1}
+    sprite: {fileID: 0}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 1
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 0
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 9
+    previousOrder: 0
+    styleName: Blue Icon
+    maximize: 1
+    color: {r: 0.63836473, g: 0.8171041, b: 1, a: 1}
+    sprite: {fileID: 0}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 1
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 0
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 10
+    previousOrder: 12
+    styleName: Image Style 13
+    maximize: 0
+    color: {r: 0, g: 0, b: 0, a: 1}
+    sprite: {fileID: 0}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 0
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  - displayOrder: 11
+    previousOrder: 13
+    styleName: Image Style 14
+    maximize: 0
+    color: {r: 0, g: 0, b: 0, a: 1}
+    sprite: {fileID: 0}
+    material: {fileID: 0}
+    raycastTarget: 1
+    preserveAspect: 0
+    imageType: 0
+    fillCenter: 1
+    fillMethod: 4
+    origin360: 0
+    origin180: 0
+    origin90: 0
+    originHorz: 0
+    originVert: 0
+    fillAmount: 1
+    clockwise: 1
+    syncColor: 1
+    syncSprite: 1
+    syncMaterial: 1
+    syncRaycastTarget: 1
+    syncPreserveAspect: 1
+    syncImageType: 1
+    syncFillCenter: 1
+    syncFillMethod: 1
+    syncOrigin360: 1
+    syncOrigin180: 1
+    syncOrigin90: 1
+    syncOriginHorzontal: 1
+    syncOriginVertical: 1
+    syncFillAmount: 1
+    syncClockwise: 1
+  textList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Menu Header
+    maximize: 1
+    font: {fileID: 12800000, guid: 6a2f9783c2b8f744abd954e247c83df9, type: 3}
+    fontStyle: 0
+    fontSize: 30
+    lineSpacing: 1
+    richText: 0
+    textColor: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
+    textMat: {fileID: 0}
+    alignByGeometry: 0
+    textAnchor: 4
+    horzWrap: 0
+    vertWrap: 0
+    resizeForBestFit: 1
+    minSize: 10
+    maxSize: 40
+    isRaycastTarget: 1
+    syncFont: 1
+    syncFontStyle: 1
+    syncFontSize: 1
+    syncLineSpacing: 1
+    syncRichText: 1
+    syncTextColor: 1
+    syncTexMat: 1
+    syncTextAnchor: 1
+    syncAlignByGeometry: 0
+    syncHorizontalWrapMode: 1
+    syncVerticalWrapMode: 1
+    syncBestFit: 1
+    syncRaycastTarget: 1
+  - displayOrder: 1
+    previousOrder: 0
+    styleName: Menu Text
+    maximize: 0
+    font: {fileID: 12800000, guid: ab278f03119faeb4a85b830a2761f729, type: 3}
+    fontStyle: 0
+    fontSize: 18
+    lineSpacing: 1
+    richText: 0
+    textColor: {r: 0.6603774, g: 0.8825241, b: 1, a: 1}
+    textMat: {fileID: 0}
+    alignByGeometry: 0
+    textAnchor: 0
+    horzWrap: 0
+    vertWrap: 0
+    resizeForBestFit: 0
+    minSize: 10
+    maxSize: 40
+    isRaycastTarget: 1
+    syncFont: 1
+    syncFontStyle: 1
+    syncFontSize: 1
+    syncLineSpacing: 1
+    syncRichText: 1
+    syncTextColor: 1
+    syncTexMat: 1
+    syncTextAnchor: 1
+    syncAlignByGeometry: 0
+    syncHorizontalWrapMode: 1
+    syncVerticalWrapMode: 1
+    syncBestFit: 1
+    syncRaycastTarget: 1
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: UI Labels
+    maximize: 0
+    font: {fileID: 12800000, guid: ab278f03119faeb4a85b830a2761f729, type: 3}
+    fontStyle: 0
+    fontSize: 18
+    lineSpacing: 1
+    richText: 0
+    textColor: {r: 1, g: 0.65882355, b: 0.950758, a: 1}
+    textMat: {fileID: 0}
+    alignByGeometry: 0
+    textAnchor: 3
+    horzWrap: 0
+    vertWrap: 0
+    resizeForBestFit: 0
+    minSize: 10
+    maxSize: 40
+    isRaycastTarget: 1
+    syncFont: 1
+    syncFontStyle: 1
+    syncFontSize: 1
+    syncLineSpacing: 1
+    syncRichText: 1
+    syncTextColor: 1
+    syncTexMat: 1
+    syncTextAnchor: 1
+    syncAlignByGeometry: 0
+    syncHorizontalWrapMode: 1
+    syncVerticalWrapMode: 1
+    syncBestFit: 1
+    syncRaycastTarget: 1
+  - displayOrder: 3
+    previousOrder: 0
+    styleName: Message Text
+    maximize: 0
+    font: {fileID: 12800000, guid: ab278f03119faeb4a85b830a2761f729, type: 3}
+    fontStyle: 0
+    fontSize: 14
+    lineSpacing: 1
+    richText: 0
+    textColor: {r: 0.65882355, g: 0.88235295, b: 1, a: 1}
+    textMat: {fileID: 0}
+    alignByGeometry: 0
+    textAnchor: 3
+    horzWrap: 1
+    vertWrap: 0
+    resizeForBestFit: 1
+    minSize: 10
+    maxSize: 40
+    isRaycastTarget: 0
+    syncFont: 1
+    syncFontStyle: 1
+    syncFontSize: 1
+    syncLineSpacing: 1
+    syncRichText: 1
+    syncTextColor: 1
+    syncTexMat: 1
+    syncTextAnchor: 1
+    syncAlignByGeometry: 1
+    syncHorizontalWrapMode: 1
+    syncVerticalWrapMode: 1
+    syncBestFit: 1
+    syncRaycastTarget: 1
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Message Label
+    maximize: 0
+    font: {fileID: 12800000, guid: ab278f03119faeb4a85b830a2761f729, type: 3}
+    fontStyle: 1
+    fontSize: 16
+    lineSpacing: 1
+    richText: 0
+    textColor: {r: 1, g: 0.65882355, b: 0.9490196, a: 1}
+    textMat: {fileID: 0}
+    alignByGeometry: 0
+    textAnchor: 4
+    horzWrap: 1
+    vertWrap: 0
+    resizeForBestFit: 1
+    minSize: 10
+    maxSize: 40
+    isRaycastTarget: 0
+    syncFont: 1
+    syncFontStyle: 1
+    syncFontSize: 1
+    syncLineSpacing: 1
+    syncRichText: 1
+    syncTextColor: 1
+    syncTexMat: 1
+    syncTextAnchor: 1
+    syncAlignByGeometry: 1
+    syncHorizontalWrapMode: 1
+    syncVerticalWrapMode: 1
+    syncBestFit: 1
+    syncRaycastTarget: 1
+  - displayOrder: 6
+    previousOrder: 0
+    styleName: Text Style 7
+    maximize: 1
+    font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    fontStyle: 0
+    fontSize: 14
+    lineSpacing: 1
+    richText: 0
+    textColor: {r: 0.9622642, g: 0.4629762, b: 0.4629762, a: 1}
+    textMat: {fileID: 0}
+    alignByGeometry: 0
+    textAnchor: 0
+    horzWrap: 1
+    vertWrap: 0
+    resizeForBestFit: 0
+    minSize: 10
+    maxSize: 40
+    isRaycastTarget: 1
+    syncFont: 1
+    syncFontStyle: 1
+    syncFontSize: 1
+    syncLineSpacing: 1
+    syncRichText: 1
+    syncTextColor: 1
+    syncTexMat: 1
+    syncTextAnchor: 1
+    syncAlignByGeometry: 1
+    syncHorizontalWrapMode: 1
+    syncVerticalWrapMode: 1
+    syncBestFit: 1
+    syncRaycastTarget: 1
+  - displayOrder: 7
+    previousOrder: 0
+    styleName: Text Style 8
+    maximize: 0
+    font: {fileID: 0}
+    fontStyle: 0
+    fontSize: 14
+    lineSpacing: 1
+    richText: 0
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+    textMat: {fileID: 0}
+    alignByGeometry: 0
+    textAnchor: 0
+    horzWrap: 1
+    vertWrap: 0
+    resizeForBestFit: 0
+    minSize: 10
+    maxSize: 40
+    isRaycastTarget: 1
+    syncFont: 1
+    syncFontStyle: 1
+    syncFontSize: 1
+    syncLineSpacing: 1
+    syncRichText: 1
+    syncTextColor: 1
+    syncTexMat: 1
+    syncTextAnchor: 1
+    syncAlignByGeometry: 1
+    syncHorizontalWrapMode: 1
+    syncVerticalWrapMode: 1
+    syncBestFit: 1
+    syncRaycastTarget: 1
+  buttonList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Button Style 1
+    maximize: 1
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.27055892, g: 0.3490709, b: 0.754717, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Button Style 2
+    maximize: 0
+    isInteractable: 1
+    transition: 2
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Button Style 3
+    maximize: 0
+    isInteractable: 1
+    transition: 3
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Button Style 5
+    maximize: 0
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Button Style 7
+    maximize: 0
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: 12
+    maximize: 0
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+  toggleList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Demo Toggle
+    maximize: 1
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
+      m_PressedColor: {r: 0.500267, g: 0.61514515, b: 0.7264151, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    isOn: 1
+    toggleTransition: 1
+    syncIsOn: 0
+    syncToggleTransition: 1
+  sliderList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Slider Style 1
+    maximize: 1
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    direction: 0
+    minValue: 0
+    maxValue: 1
+    wholeNumbers: 0
+    value: 0.5
+    syncDirection: 1
+    syncMinValue: 1
+    syncMaxValue: 1
+    syncWholeNumbers: 1
+    syncValue: 0
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Slider style
+    maximize: 1
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    direction: 0
+    minValue: 0
+    maxValue: 1
+    wholeNumbers: 0
+    value: 0
+    syncDirection: 1
+    syncMinValue: 1
+    syncMaxValue: 1
+    syncWholeNumbers: 1
+    syncValue: 0
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Slider style
+    maximize: 1
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    direction: 0
+    minValue: 0
+    maxValue: 1
+    wholeNumbers: 0
+    value: 0
+    syncDirection: 1
+    syncMinValue: 1
+    syncMaxValue: 1
+    syncWholeNumbers: 1
+    syncValue: 0
+  inputList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Input Style 1
+    maximize: 1
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    text: 
+    characterLimit: 0
+    contentType: 0
+    lineType: 0
+    inputType: 0
+    keyboardType: 4
+    characterValidation: 1
+    regexValue: 
+    caretBlinkRate: 1
+    caretWidth: 1
+    customCaretColor: 0
+    caretColor: {r: 0, g: 0, b: 1, a: 0}
+    selectionColor: {r: 0, g: 0, b: 1, a: 0}
+    hideMobileInput: 0
+    readOnly: 0
+    syncText: 1
+    syncCharacterLimit: 1
+    syncContentType: 1
+    syncLineType: 1
+    syncInputType: 1
+    syncKeyboardType: 1
+    syncCharacterValidation: 1
+    syncCaretBlinkRate: 1
+    syncCaretWidth: 1
+    syncCustomCaretColor: 1
+    syncCaretColor: 1
+    syncSelectionColor: 1
+    syncHideMobileInput: 1
+    syncReadOnly: 1
+  dropdownList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: Dropdown Style 1
+    maximize: 1
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    value: -1
+    optionList: []
+    syncValue: 1
+    syncOptions: 0
+  tmproTextList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: TMP Text Style 1
+    maximize: 0
+    fontAsset: {fileID: 0}
+    syncFontAsset: 1
+    materialPreset: {fileID: 0}
+    syncMaterialPreset: 1
+    materialPresetIndex: 0
+    materialPresets: []
+    materialValues: 00000000
+    isRightToLeft: 0
+    syncIsRightToLeft: 1
+    fontStyles: 0
+    syncFontStyles: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+    textAlignment: 2049
+    syncTextAligment: 1
+    wrapMix: 0.4
+    syncWrapMix: 1
+    fontSize: 25
+    syncFontSize: 1
+    fontWeight: 400
+    syncFontWeight: 1
+    enableAutoSize: 0
+    syncAutoSize: 1
+    fontSizeMax: 50
+    syncFontSizeMax: 1
+    fontSizeMin: 15
+    syncFontSizeMin: 1
+    charWidthMaxAdjust: 0
+    syncCharWidthMaxAdjust: 1
+    lineSpacingMax: 0
+    syncLineSpacingMax: 1
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    syncColor: 1
+    enableVertextGradient: 0
+    syncEnableVertexGradient: 1
+    colorPreset: {fileID: 0}
+    syncColorPreset: 1
+    colorMode: 3
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    syncColorGradient: 1
+    overrideTags: 0
+    syncOverrideTags: 1
+    characterSpacing: 0
+    syncCharacterSpacing: 1
+    wordSpacing: 0
+    syncWordSpacing: 1
+    lineSpacing: 0
+    syncLineSpacing: 1
+    paragraphSpacing: 0
+    syncParagraphSpacing: 1
+    enableWordWrapping: 1
+    syncWordWrapping: 1
+    overflowMode: 0
+    syncOverflowMode: 1
+    horizontalMapping: 0
+    syncHoriztonalMapping: 1
+    verticalMapping: 0
+    syncVerticalMapping: 1
+    lineOffset: 0
+    syncLineOffset: 1
+    margins: {x: 0, y: 0, z: 0, w: 0}
+    syncMargins: 1
+    geometrySorting: 0
+    syncGeometrySorting: 1
+    richText: 1
+    syncRichText: 1
+    raycastTarget: 1
+    syncRaycastTarget: 1
+    parseEscapeCharacters: 1
+    syncParseEscapeCharacters: 1
+    visibleDescender: 1
+    syncVisibleDescender: 1
+    spriteAsset: {fileID: 0}
+    syncSpritieAsset: 1
+    kerning: 1
+    syncKerning: 1
+    extraPadding: 0
+    syncExtraPadding: 1
+  - displayOrder: 1
+    previousOrder: 0
+    styleName: TMP Text Style 1
+    maximize: 0
+    fontAsset: {fileID: 0}
+    syncFontAsset: 1
+    materialPreset: {fileID: 0}
+    syncMaterialPreset: 1
+    materialPresetIndex: 0
+    materialPresets: []
+    materialValues: 00000000
+    isRightToLeft: 0
+    syncIsRightToLeft: 1
+    fontStyles: 0
+    syncFontStyles: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+    textAlignment: 2049
+    syncTextAligment: 1
+    wrapMix: 0.4
+    syncWrapMix: 1
+    fontSize: 25
+    syncFontSize: 1
+    fontWeight: 400
+    syncFontWeight: 1
+    enableAutoSize: 0
+    syncAutoSize: 1
+    fontSizeMax: 50
+    syncFontSizeMax: 1
+    fontSizeMin: 15
+    syncFontSizeMin: 1
+    charWidthMaxAdjust: 0
+    syncCharWidthMaxAdjust: 1
+    lineSpacingMax: 0
+    syncLineSpacingMax: 1
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    syncColor: 1
+    enableVertextGradient: 0
+    syncEnableVertexGradient: 1
+    colorPreset: {fileID: 0}
+    syncColorPreset: 1
+    colorMode: 3
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    syncColorGradient: 1
+    overrideTags: 0
+    syncOverrideTags: 1
+    characterSpacing: 0
+    syncCharacterSpacing: 1
+    wordSpacing: 0
+    syncWordSpacing: 1
+    lineSpacing: 0
+    syncLineSpacing: 1
+    paragraphSpacing: 0
+    syncParagraphSpacing: 1
+    enableWordWrapping: 1
+    syncWordWrapping: 1
+    overflowMode: 0
+    syncOverflowMode: 1
+    horizontalMapping: 0
+    syncHoriztonalMapping: 1
+    verticalMapping: 0
+    syncVerticalMapping: 1
+    lineOffset: 0
+    syncLineOffset: 1
+    margins: {x: 0, y: 0, z: 0, w: 0}
+    syncMargins: 1
+    geometrySorting: 0
+    syncGeometrySorting: 1
+    richText: 1
+    syncRichText: 1
+    raycastTarget: 1
+    syncRaycastTarget: 1
+    parseEscapeCharacters: 1
+    syncParseEscapeCharacters: 1
+    visibleDescender: 1
+    syncVisibleDescender: 1
+    spriteAsset: {fileID: 0}
+    syncSpritieAsset: 1
+    kerning: 1
+    syncKerning: 1
+    extraPadding: 0
+    syncExtraPadding: 1
+  - displayOrder: 2
+    previousOrder: 0
+    styleName: TMP Text Style 2
+    maximize: 0
+    fontAsset: {fileID: 0}
+    syncFontAsset: 1
+    materialPreset: {fileID: 0}
+    syncMaterialPreset: 1
+    materialPresetIndex: 0
+    materialPresets: []
+    materialValues: 00000000
+    isRightToLeft: 0
+    syncIsRightToLeft: 1
+    fontStyles: 0
+    syncFontStyles: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+    textAlignment: 2049
+    syncTextAligment: 1
+    wrapMix: 0.4
+    syncWrapMix: 1
+    fontSize: 25
+    syncFontSize: 1
+    fontWeight: 400
+    syncFontWeight: 1
+    enableAutoSize: 0
+    syncAutoSize: 1
+    fontSizeMax: 50
+    syncFontSizeMax: 1
+    fontSizeMin: 15
+    syncFontSizeMin: 1
+    charWidthMaxAdjust: 0
+    syncCharWidthMaxAdjust: 1
+    lineSpacingMax: 0
+    syncLineSpacingMax: 1
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    syncColor: 1
+    enableVertextGradient: 0
+    syncEnableVertexGradient: 1
+    colorPreset: {fileID: 0}
+    syncColorPreset: 1
+    colorMode: 3
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    syncColorGradient: 1
+    overrideTags: 0
+    syncOverrideTags: 1
+    characterSpacing: 0
+    syncCharacterSpacing: 1
+    wordSpacing: 0
+    syncWordSpacing: 1
+    lineSpacing: 0
+    syncLineSpacing: 1
+    paragraphSpacing: 0
+    syncParagraphSpacing: 1
+    enableWordWrapping: 1
+    syncWordWrapping: 1
+    overflowMode: 0
+    syncOverflowMode: 1
+    horizontalMapping: 0
+    syncHoriztonalMapping: 1
+    verticalMapping: 0
+    syncVerticalMapping: 1
+    lineOffset: 0
+    syncLineOffset: 1
+    margins: {x: 0, y: 0, z: 0, w: 0}
+    syncMargins: 1
+    geometrySorting: 0
+    syncGeometrySorting: 1
+    richText: 1
+    syncRichText: 1
+    raycastTarget: 1
+    syncRaycastTarget: 1
+    parseEscapeCharacters: 1
+    syncParseEscapeCharacters: 1
+    visibleDescender: 1
+    syncVisibleDescender: 1
+    spriteAsset: {fileID: 0}
+    syncSpritieAsset: 1
+    kerning: 1
+    syncKerning: 1
+    extraPadding: 0
+    syncExtraPadding: 1
+  tmproInputList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: New TMP Input Field Style
+    maximize: 0
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.7830189, g: 0.3545746, b: 0.3545746, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    text: 
+    characterLimit: 0
+    contentType: 9
+    lineType: 0
+    inputType: 0
+    keyboardType: 4
+    characterValidation: 1
+    regexValue: 
+    caretBlinkRate: 1
+    caretWidth: 1
+    customCaretColor: 0
+    caretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    selectionColor: {r: 0, g: 0, b: 1, a: 0}
+    hideMobileInput: 1
+    readOnly: 0
+    syncText: 1
+    syncCharacterLimit: 1
+    syncContentType: 1
+    syncLineType: 1
+    syncInputType: 1
+    syncKeyboardType: 1
+    syncCharacterValidation: 1
+    syncCaretBlinkRate: 1
+    syncCaretWidth: 1
+    syncCustomCaretColor: 1
+    syncCaretColor: 1
+    syncSelectionColor: 1
+    syncHideMobileInput: 1
+    syncReadOnly: 1
+    fontAsset: {fileID: 0}
+    syncFontAsset: 1
+    pointSize: 14
+    syncPointSize: 1
+    onFocusSelectAll: 1
+    syncOnFucusSelectAll: 1
+    resetOnDeactivation: 1
+    syncResetOnDeactivation: 1
+    restoreOnEscapeKey: 1
+    syncRetoreOnEscapeKey: 1
+    hideSoftKeyboard: 0
+    syncHideSoftKeyboard: 1
+    richText: 1
+    syncRichText: 1
+    allowRichTextEditing: 1
+    syncAllowRichTextEditing: 1
+    tmp_characterValidation: 2
+    syncRegexValue: 1
+    tmp_inputValidator: {fileID: 0}
+    syncInputValidator: 1
+    lineLimit: 0
+    syncLineLimit: 1
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: InputField (TMP) style
+    maximize: 0
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    text: 
+    characterLimit: 0
+    contentType: 0
+    lineType: 0
+    inputType: 0
+    keyboardType: 0
+    characterValidation: 1
+    regexValue: 
+    caretBlinkRate: 0.85
+    caretWidth: 1
+    customCaretColor: 0
+    caretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    selectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+    hideMobileInput: 1
+    readOnly: 0
+    syncText: 1
+    syncCharacterLimit: 1
+    syncContentType: 1
+    syncLineType: 1
+    syncInputType: 1
+    syncKeyboardType: 1
+    syncCharacterValidation: 1
+    syncCaretBlinkRate: 1
+    syncCaretWidth: 1
+    syncCustomCaretColor: 1
+    syncCaretColor: 1
+    syncSelectionColor: 1
+    syncHideMobileInput: 1
+    syncReadOnly: 1
+    fontAsset: {fileID: 0}
+    syncFontAsset: 1
+    pointSize: 14
+    syncPointSize: 1
+    onFocusSelectAll: 1
+    syncOnFucusSelectAll: 1
+    resetOnDeactivation: 1
+    syncResetOnDeactivation: 1
+    restoreOnEscapeKey: 1
+    syncRetoreOnEscapeKey: 1
+    hideSoftKeyboard: 0
+    syncHideSoftKeyboard: 1
+    richText: 1
+    syncRichText: 1
+    allowRichTextEditing: 1
+    syncAllowRichTextEditing: 1
+    tmp_characterValidation: 0
+    syncRegexValue: 1
+    tmp_inputValidator: {fileID: 0}
+    syncInputValidator: 1
+    lineLimit: 0
+    syncLineLimit: 1
+  tmproDropdownList:
+  - displayOrder: 0
+    previousOrder: 0
+    styleName: New TMP Dropdown Style
+    maximize: 0
+    isInteractable: 1
+    transition: 1
+    graphicTarget: {fileID: 0}
+    colors:
+      m_NormalColor: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
+      m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+      m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+      m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    colorMultiplier: 1
+    fadeDuration: 0.1
+    navigation:
+      m_Mode: 3
+      m_WrapAround: 0
+      m_SelectOnUp: {fileID: 0}
+      m_SelectOnDown: {fileID: 0}
+      m_SelectOnLeft: {fileID: 0}
+      m_SelectOnRight: {fileID: 0}
+    syncIsInteractable: 1
+    syncTransition: 1
+    syncNormalColor: 1
+    syncHighlightedColor: 1
+    syncPressedColor: 1
+    syncSelectedColor: 1
+    syncDisabledColor: 1
+    syncColorMultiplier: 1
+    syncFadeDuration: 1
+    syncNavigation: 1
+    targetGraphic: {fileID: 0}
+    highlightedSprite: {fileID: 0}
+    pressedSprite: {fileID: 0}
+    selectedSprite: {fileID: 0}
+    disabledSprite: {fileID: 0}
+    syncTargetGraphic: 1
+    syncHighlightedSprite: 1
+    syncPressedSprite: 1
+    syncSelectedSprite: 1
+    syncDisabledSprite: 1
+    normalTrigger: Normal
+    hightlightedTrigger: Highlighted
+    pressedTrigger: Pressed
+    disabledTrigger: Disabled
+    syncNormalTrigger: 1
+    syncHighlightedTrigger: 1
+    syncPressedTrigger: 1
+    syncDisabledTrigger: 1
+    value: 0
+    optionList: []
+    syncValue: 1
+    syncOptions: 0
+    tmp_optionList:
+    - m_Text: Option 1
+      m_Image: {fileID: 0}
+    - m_Text: Option 2
+      m_Image: {fileID: 0}
+    - m_Text: Option 3
+      m_Image: {fileID: 0}
+    - m_Text: Option 4
+      m_Image: {fileID: 0}
