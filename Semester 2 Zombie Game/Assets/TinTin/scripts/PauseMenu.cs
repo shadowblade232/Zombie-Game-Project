@@ -48,10 +48,10 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    //public void Quit()
-    //{
-    //    // Implement your quit logic here
-    //    // For example, you can exit the application
-    //    Application.Quit();
-    //}
+    public void Quit()
+    {
+        // Implement your quit logic here
+        // For example, you can exit the application
+        Application.Quit();
+    }
 }

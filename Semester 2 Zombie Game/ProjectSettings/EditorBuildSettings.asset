@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MasterScene.unity
-    guid: 4a6e1f083a9ef7746891afba3ecb2033
+    path: Assets/QMasterScene.unity
+    guid: a31bc67b4ddc4f948883c3e7e5049a43
   m_configObjects: {}
