@@ -96,8 +96,7 @@ public class ZombieController : MonoBehaviour
         if(health <= 0)
         {
             Instantiate(dieParticles, this.transform);
-            gun gunController = player.GetComponent<gun>();
-            gunController.kills++;
+            
             isDead = true;
         }
     }
@@ -192,7 +191,7 @@ public class ZombieController : MonoBehaviour
 
             // Cast the ray and visualize it
             Ray ray = new Ray(transform.position, direction);
-            Debug.DrawRay(ray.origin, ray.direction * range, Color.red);
+            //Debug.DrawRay(ray.origin, ray.direction * range, Color.red);
 
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, range))

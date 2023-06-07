@@ -16,13 +16,13 @@ public class gun : MonoBehaviour
     private float nextFire = 0f;
     public ParticleSystem flash;
     public int ammo = 24;
-    public int score = 0;
-    public TextMeshProUGUI scoreCount;
+   // public int score = 0;
+   // public TextMeshProUGUI scoreCount;
     private Animation anim;
     public Animator slide;
     public TextMeshProUGUI bulletct;
     public float elapsedTime = 0;
-    public int kills = 0;
+    //public int hits = 0;
 
     public AudioSource shot;
     public AudioSource reload;
@@ -39,25 +39,28 @@ public class gun : MonoBehaviour
     void Update()
     {
         bulletct.text = ammo.ToString();
+        //scoreCount.text = ((int)hits / 2).ToString();
         
         //check if game paused
        if (Time.timeScale == 1)
         {
-            if (Input.GetButton("Fire1") && Time.time >= nextFire)
-            {
-                nextFire = Time.time + 1f / fireRate;
-                if (ammo > 0)
-                {
-                    shoot();
-                }
-            }
+            /* if (Input.GetButton("Fire1") && Time.time >= nextFire)
+             { 
+            Debug.Log("pew");
+                 nextFire = Time.time + 1f / fireRate;
+                 if (ammo > 0)
+                 {
+                     shoot();
+                 }
+             } */
 
-            if (Input.GetKey("r"))
+           if (Input.GetKey("r"))
             {
                 reload.Play();
                 ammo = 24;
             }
-            /* if (Input.GetButtonDown("Fire1"))
+
+             if (Input.GetButtonDown("Fire1"))
             {
                 if (ammo > 0)
                 {
@@ -65,7 +68,8 @@ public class gun : MonoBehaviour
                 }
 
             }
-            */
+           
+            
         }   
 
     }
@@ -77,13 +81,19 @@ public class gun : MonoBehaviour
         fpsCam.GetComponent<CameraShake>().shakecamera();
         ammo--;
         slide.Play("slidefire");
+        Ray ray = new Ray(fpsCam.transform.position, fpsCam.transform.forward);
+        Debug.DrawRay(ray.origin, ray.direction * range, Color.red);
+
         RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        float radius = 1;
+        if (Physics.Raycast(ray, out hit, range))
+       // if (Physics.SphereCast(ray, radius, out hit, range))
         {
-            
+
             target targ = hit.transform.GetComponent<target>();
             if (targ != null)
             {
+               // hits++;
                 targ.damage(damage);
 
                 if (hit.rigidbody != null)
