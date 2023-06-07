@@ -96,6 +96,8 @@ public class ZombieController : MonoBehaviour
         if(health <= 0)
         {
             Instantiate(dieParticles, this.transform);
+            gun gunController = player.GetComponent<gun>();
+            gunController.kills++;
             isDead = true;
         }
     }

@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
+    public GameObject deathMenuUI;
     private bool isPlaying;
 
     private void Start()
@@ -13,12 +14,14 @@ public class PauseMenu : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (!isPlaying)
-                Resume();
-            else
-                Pause();
+        if (!(deathMenuUI.activeSelf)) {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (!isPlaying)
+                    Resume();
+                else
+                    Pause();
+            }
         }
     }
 

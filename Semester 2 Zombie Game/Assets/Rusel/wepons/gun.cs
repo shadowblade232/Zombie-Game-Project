@@ -16,9 +16,13 @@ public class gun : MonoBehaviour
     private float nextFire = 0f;
     public ParticleSystem flash;
     public int ammo = 24;
+    public int score = 0;
+    public TextMeshProUGUI scoreCount;
     private Animation anim;
     public Animator slide;
     public TextMeshProUGUI bulletct;
+    public float elapsedTime = 0;
+    public int kills = 0;
 
     public AudioSource shot;
     public AudioSource reload;
@@ -26,6 +30,7 @@ public class gun : MonoBehaviour
 
     void Start()
     {
+        elapsedTime = 0;
         //ParticalSystem anim = ParticalSystem.GetComponent<MuzzleFlash>();
         
         //slide.anim = GetComponent<Animation>();
@@ -33,10 +38,8 @@ public class gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-         
-        
         bulletct.text = ammo.ToString();
+        
         //check if game paused
        if (Time.timeScale == 1)
         {
