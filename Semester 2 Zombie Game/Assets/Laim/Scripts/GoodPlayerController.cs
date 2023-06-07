@@ -25,29 +25,33 @@ public class GoodPlayerController : MonoBehaviour
 
     private void Update()
     {
-        // Movement
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        float moveVertical = Input.GetAxisRaw("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, 0f, moveVertical).normalized * moveSpeed * Time.deltaTime;
-        rb.MovePosition(transform.position + transform.TransformDirection(movement));
-
-        // Jump
-        if (Input.GetButtonDown("Jump") && (isOnGround))
+        //check if game paused
+        if (Time.timeScale == 1)
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
+            // Movement
+            float moveHorizontal = Input.GetAxisRaw("Horizontal");
+            float moveVertical = Input.GetAxisRaw("Vertical");
 
-        // Camera Rotation
-        float mouseX = Input.GetAxis("Mouse X") * lookSensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * lookSensitivity;
+            Vector3 movement = new Vector3(moveHorizontal, 0f, moveVertical).normalized * moveSpeed * Time.deltaTime;
+            rb.MovePosition(transform.position + transform.TransformDirection(movement));
 
-        yRotation += mouseX;
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, maxLookDown, maxLookUp);
+            // Jump
+            if (Input.GetButtonDown("Jump") && (isOnGround))
+            {
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            }
 
-        transform.eulerAngles = new Vector3(0f, yRotation, 0f);
-        playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            // Camera Rotation
+            float mouseX = Input.GetAxis("Mouse X") * lookSensitivity;
+            float mouseY = Input.GetAxis("Mouse Y") * lookSensitivity;
+
+            yRotation += mouseX;
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, maxLookDown, maxLookUp);
+
+            transform.eulerAngles = new Vector3(0f, yRotation, 0f);
+            playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        } 
     }
 
     private void OnCollisionEnter(Collision collision)

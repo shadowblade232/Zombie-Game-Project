@@ -38,26 +38,29 @@ public class gun : MonoBehaviour
          }
         */
         bulletct.text = ammo.ToString();
-
-       if (Input.GetKey("r"))
+        //check if game paused
+       if (Time.timeScale == 1)
         {
-            ammo = 24;
-        }
-        if (Input.GetButtonDown("Fire1"))
-        {
-           if (ammo > 0)
+            if (Input.GetKey("r"))
             {
-                shoot();
+                ammo = 24;
             }
-           
-        }
-        
+            if (Input.GetButtonDown("Fire1"))
+            {
+                if (ammo > 0)
+                {
+                    shoot();
+                }
+
+            }
+        }   
 
     }
     
     void shoot()
     {
         flash.Play();
+        fpsCam.GetComponent<CameraShake>().shakecamera();
         ammo--;
         slide.Play("slidefire");
         RaycastHit hit;

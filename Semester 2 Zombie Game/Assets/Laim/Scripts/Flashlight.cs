@@ -16,7 +16,7 @@ public class Flashlight : MonoBehaviour
     private void Update()
     {
         // Check if the F key has been pressed
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && Time.timeScale == 1)
         {
             // Toggle the flashlight on and off
             flashlight.enabled = !flashlight.enabled;
