@@ -20,6 +20,9 @@ public class gun : MonoBehaviour
     public Animator slide;
     public TextMeshProUGUI bulletct;
 
+    public AudioSource shot;
+    public AudioSource reload;
+
 
     void Start()
     {
@@ -31,21 +34,27 @@ public class gun : MonoBehaviour
     void Update()
     {
 
-        /* if (Input.GetButton("Fire1") && Time.time >= nextFire)
-         {
-             nextFire = Time.time + 1f / fireRate;
-             shoot();
-         }
-        */
+         
+        
         bulletct.text = ammo.ToString();
         //check if game paused
        if (Time.timeScale == 1)
         {
+            if (Input.GetButton("Fire1") && Time.time >= nextFire)
+            {
+                nextFire = Time.time + 1f / fireRate;
+                if (ammo > 0)
+                {
+                    shoot();
+                }
+            }
+
             if (Input.GetKey("r"))
             {
+                reload.Play();
                 ammo = 24;
             }
-            if (Input.GetButtonDown("Fire1"))
+            /* if (Input.GetButtonDown("Fire1"))
             {
                 if (ammo > 0)
                 {
@@ -53,6 +62,7 @@ public class gun : MonoBehaviour
                 }
 
             }
+            */
         }   
 
     }
@@ -60,6 +70,7 @@ public class gun : MonoBehaviour
     void shoot()
     {
         flash.Play();
+        shot.Play();
         fpsCam.GetComponent<CameraShake>().shakecamera();
         ammo--;
         slide.Play("slidefire");

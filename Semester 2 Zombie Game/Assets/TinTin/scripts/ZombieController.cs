@@ -35,6 +35,9 @@ public class ZombieController : MonoBehaviour
     public float targetDistance; // the distance to the target
     private bool isDead = false; // a flag to indicate if the zombie is dead
     private float timeDead; // how long the zombie has been dead
+
+    //particles to play when it dies
+    public GameObject dieParticles;
    
 
     void Start()
@@ -92,6 +95,7 @@ public class ZombieController : MonoBehaviour
         // If the enemy's health is zero or below, destroy the enemy
         if(health <= 0)
         {
+            Instantiate(dieParticles, this.transform);
             isDead = true;
         }
     }

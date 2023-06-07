@@ -4,6 +4,7 @@ using UnityEngine;
 public class target : MonoBehaviour
 {
     public float health = 50f;
+    public GameObject dieParticles;
 
     public void damage(float amt)
     {
@@ -18,6 +19,7 @@ public class target : MonoBehaviour
     void die()
     {
         Destroy(gameObject);
+        Instantiate(dieParticles, this.transform);
     }
 
 }

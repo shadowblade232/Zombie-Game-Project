@@ -883,6 +883,8 @@ MonoBehaviour:
   damagedMaterial: {fileID: 2100000, guid: 8e296cb8d71c2654f8a82771365f8383, type: 2}
   damageTimer: 1
   targetDistance: 5
+  dieParticles: {fileID: 8829451551789304542, guid: 244b1cc8940bd0844a05812855fbe45d,
+    type: 3}
 --- !u!114 &6460322327162525394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,6 +898,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  dieParticles: {fileID: 8829451551789304542, guid: 244b1cc8940bd0844a05812855fbe45d,
+    type: 3}
 --- !u!195 &3213181221629813178
 NavMeshAgent:
   m_ObjectHideFlags: 0
